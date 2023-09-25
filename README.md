@@ -23,9 +23,9 @@
 
 - 🌱 I’m currently learning *Frameworks of Python like Django and Flask*
 
--- 📫 How to reach me *lovnishverma123@gmail.com*
+-- 📫 How to reach me *technicalboyprince@gmail.com*
 
-- 📄 Know about my experiences [(https://drive.google.com/file/d/1X4eA4hn_IIsQ2_S6SK27XYW5kH1jewCN/view))
+- 📄 Know about my experiences [(https://drive.google.com/file/d/1IItf71pVAbUhO4DSRarRPJOYppgNujbp/view?usp=drive_link))
 
 - ⚡ Fun fact *I think I'm a pretty likeable and fun person to be around*
 
