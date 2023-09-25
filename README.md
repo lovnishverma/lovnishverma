@@ -25,7 +25,7 @@
 
 -- 📫 How to reach me *technicalboyprince@gmail.com*
 
-- 📄 Know about my experiences [(https://drive.google.com/file/d/1IItf71pVAbUhO4DSRarRPJOYppgNujbp/view?usp=drive_link))
+- 📄 Know about my experiences [(https://drive.google.com/file/d/1trwRx9Nn-Jeguy_R1GLBezHlCGYUH7FY/view?usp=sharing))
 
 - ⚡ Fun fact *I think I'm a pretty likeable and fun person to be around*
 
