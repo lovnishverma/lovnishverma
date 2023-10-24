@@ -19,7 +19,7 @@
 </div>
 
 
-- 🔭 I’m currently working on *Malware Analysis Techniques using Machine Learning*
+- 🔭 I’m currently working As AIML Intern
 
 - 🌱 I’m currently learning *Frameworks of Python like Django and Flask*
 
