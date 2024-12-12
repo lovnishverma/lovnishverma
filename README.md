@@ -21,11 +21,10 @@
 
 - 🔭 I’m currently working As Project Engineer at NIELIT
 
-- 🌱 I’m currently learning *Frameworks of Python like Django and Flask*
 
 -- 📫 How to reach me *princelv84@gmail.com*
 
-- 📄 Know about my experiences [(https://drive.google.com/file/d/1trwRx9Nn-Jeguy_R1GLBezHlCGYUH7FY/view?usp=sharing))
+- 📄 Know about my experiences [(https://glitch.com/@lovnishverma))
 
 - ⚡ Fun fact *I think I'm a pretty likeable and fun person to be around*
 
