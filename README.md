@@ -11,7 +11,7 @@
 
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
-<h3 align="center">An Independent and self- motivated Computer Science graduate with proven and tested problem solving skills. Always willing and eager to learn new stuff.</h3>
+<h3 align="center">An Independent and self- motivated Computer Science Project Engineer with proven and tested problem solving skills. Always willing and eager to learn new stuff.</h3>
 
 <div align="center">
   <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" width="300" height="250" />
