@@ -61,3 +61,9 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&locale=en" alt="lovnishverma" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lovnishverma&" alt="lovnishverma" /></p>
+---
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+![Lovnish's GitHub stats](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=radical)
+
+🌟 **If you like my work, consider starring my repositories!**  
