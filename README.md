@@ -19,7 +19,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lovnishverma" alt="lovnishverma" /></a> </p>
 
-<p align="left"> <a href="https://www.instagram.com/lovnishofficial/" target="blank"><img src="https://img.shields.io/twitter/follow/princelv84?logo=twitter&style=for-the-badge" alt="lovnishofficial" /></a> </p>
+<p align="left"> <a href="https://www.instagram.com/lovnishofficial/" target="blank"><img src="https://img.shields.io/twitter/follow/lovnishofficial?logo=twitter&style=for-the-badge" alt="lovnishofficial" /></a> </p>
 
 - 🔭 I’m currently working as [Project Engineer at NIELIT Chandigarh](https://nielit.gov.in/chandigarh/index.php)
 
