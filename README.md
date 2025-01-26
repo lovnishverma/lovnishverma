@@ -26,7 +26,7 @@
   - Polytechnic Diploma in Computer Engineering (2020) - HPTECH Board  
 - 🌱 **Currently exploring:** Big Data & AI/ML innovations  
 - 📫 **How to reach me:** princelv84@gmail.com  
-- 📄 **Know about my experiences:** [My Portfolio](https://glitch.com/@lovnishverma)  
+- 📄 **Know about my experiences:** [My Projects](https://glitch.com/@lovnishverma)  
 - ⚡ **Fun fact:** I believe in collaboration and making work fun for everyone around me!  
 
 ---
