@@ -58,10 +58,8 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=lovnishverma&show_icons=true&locale=en&layout=compact" alt="lovnishverma" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&locale=en" alt="lovnishverma" /></p>
+![Lovnish's GitHub stats](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=radical)
 
 ---
-
-![Lovnish's GitHub stats](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=radical)
 
 🌟 **If you like my work, consider starring my repositories!**  
