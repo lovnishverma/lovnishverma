@@ -19,7 +19,7 @@
   <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300" height="200" alt="GIF 2"/>
 </div>
 
-- 🔭 **Currently working as an Engineer at Fore Solutions**  
+- 🔭 **Currently working as an Project Engineer at NIELIT Chandigarh**  
 - 💻 **Capstone Project:** [CNN-Based Brain Tumour Detection with Scalable Data Storage (MongoDB Atlas)](https://huggingface.co/spaces/LovnishVerma/Capstone-Project)  
 - 🎓 **Education:**  
   - B.Tech in Computer Science & Engineering (2023) - Himachal Pradesh Technical University  
