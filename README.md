@@ -7,7 +7,7 @@
     </a>
 </div>
 
-<img src="https://komarev.com/ghpvc/?username=lovnish123-git&style=flat-square&color=blue" alt="Profile Views"/>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="lovnishverma" /> </p>
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 <h3 align="center">
@@ -19,8 +19,6 @@
   <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300" height="200" alt="GIF 2"/>
 </div>
 <h3 align="center">A passionate Computer Engineer from India</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="lovnishverma" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lovnishverma" alt="lovnishverma" /></a> </p>
 
