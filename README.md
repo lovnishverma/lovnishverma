@@ -8,7 +8,7 @@
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 <h3 align="center">
-  An independent and self-motivated Computer Engineer with hands-on experience in AI/ML, Big Data, and Software Development. Eager to solve challenging problems and always enthusiastic about learning new technologies.
+  An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... Eager to solve challenging problems and always enthusiastic about learning new technologies.
 </h3>
 
 <div align="center">
