@@ -16,6 +16,8 @@
 
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
+![image](https://github.com/user-attachments/assets/65aafa05-925d-4a21-9541-ced7adbd0c52)
+
 <h3 align="center">
   An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... 
 
@@ -72,5 +74,8 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 ![Lovnish's GitHub stats](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=radical)
 
 ---
+
+![Uploading image.png…]()
+
 
 🌟 **If you like my work, consider starring my repositories!**  
