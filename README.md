@@ -20,7 +20,8 @@
 ![image](https://github.com/user-attachments/assets/65aafa05-925d-4a21-9541-ced7adbd0c52)
 
 <h3 align="center">
-  An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... 
+  ![image](https://github.com/user-attachments/assets/b21eaad8-f1e6-4e70-adb3-81cb88ae81a7)
+An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... 
 
 Eager to solve challenging problems and always enthusiastic about learning new technologies.
 </h3>
