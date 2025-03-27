@@ -16,6 +16,7 @@
 
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
+
 ![image](https://github.com/user-attachments/assets/65aafa05-925d-4a21-9541-ced7adbd0c52)
 
 <h3 align="center">
@@ -75,7 +76,7 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 
 ---
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/14626de5-c2df-4dfc-83c2-a04f51ca07e6)
 
 
 🌟 **If you like my work, consider starring my repositories!**  
