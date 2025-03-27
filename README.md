@@ -1,25 +1,18 @@
-<table width="100%">
-    <tr>
-        <!-- Left Aligned Badge -->
-        <td align="left">
-            <a href="https://www.linkedin.com/in/lovnishverma" target="_blank">
-                <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-            </a>
-        </td>
+<!-- Center Align Social Badges -->
+<div id="badges" align="center">
+    <a href="https://www.linkedin.com/in/lovnishverma" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    </a>
+    <a href="https://orcid.org/0009-0009-3992-030X" target="_blank">
+        <img src="https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=for-the-badge&logo=orcid" alt="ORCID Profile">
+    </a>
+</div>
 
-        <!-- Center Aligned Badge -->
-        <td align="center">
-            <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views Counter" />
-        </td>
+<!-- Profile Views Counter (center Aligned) -->
+<p align="center">
+    <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views Counter" />
+</p>
 
-        <!-- Right Aligned Badge -->
-        <td align="right">
-            <a href="https://orcid.org/0009-0009-3992-030X" target="_blank">
-                <img src="https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=for-the-badge&logo=orcid" alt="ORCID Profile">
-            </a>
-        </td>
-    </tr>
-</table>
 
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
