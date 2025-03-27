@@ -6,6 +6,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="lovnishverma" /> </p>
 
+<div id="badges" align="left">
+   [![ORCID](https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=flat-square&logo=orcid)](https://orcid.org/0009-0009-3992-030X)
+</div>
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 <h3 align="center">
   An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... 
@@ -20,8 +23,6 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 <h3 align="center">A passionate Computer Engineer from India</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lovnishverma" alt="lovnishverma" /></a> </p>
-
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=flat-square&logo=orcid)](https://orcid.org/0009-0009-3992-030X)
 
 <p align="left"> <a href="https://www.instagram.com/lovnishofficial/" target="blank"><img src="https://img.shields.io/twitter/follow/lovnishofficial?logo=twitter&style=for-the-badge" alt="lovnishofficial" /></a> </p>
 
