@@ -21,9 +21,7 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lovnishverma" alt="lovnishverma" /></a> </p>
 
-[![ORCID](https://img.shields.io/badge/ORCID-
-0009-0009-3992-030X-green?style=flat-square&logo=orcid)](https://orcid.org/0009-0009-3992-030X)
-
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=flat-square&logo=orcid)](https://orcid.org/0009-0009-3992-030X)
 
 <p align="left"> <a href="https://www.instagram.com/lovnishofficial/" target="blank"><img src="https://img.shields.io/twitter/follow/lovnishofficial?logo=twitter&style=for-the-badge" alt="lovnishofficial" /></a> </p>
 
