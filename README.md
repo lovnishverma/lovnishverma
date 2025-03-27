@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="lovnishverma" /> </p>
 
-<div id="badges" align="left">
+<div id="badges" align="right">
     <a href="https://orcid.org/0009-0009-3992-030X" target="_blank">
         <img src="https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=flat-square&logo=orcid" alt="ORCID Profile">
     </a>
