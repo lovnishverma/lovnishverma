@@ -7,10 +7,11 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="lovnishverma" /> </p>
 
 <div id="badges" align="left">
-    
-    [![ORCID](https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=flat-square&logo=orcid)](https://orcid.org/0009-0009-3992-030X)
-
+    <a href="https://orcid.org/0009-0009-3992-030X" target="_blank">
+        <img src="https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=flat-square&logo=orcid" alt="ORCID Profile">
+    </a>
 </div>
+
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 <h3 align="center">
   An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... 
