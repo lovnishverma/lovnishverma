@@ -29,7 +29,7 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 </div>
 <h3 align="center">A passionate Computer Engineer from India</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lovnishverma" alt="lovnishverma" /></a> </p>
+<p align="left"> <a href="https://github.com/lovmishverma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lovnishverma" alt="lovnishverma" /></a> </p>
 
 <p align="left"> <a href="https://www.instagram.com/lovnishofficial/" target="blank"><img src="https://img.shields.io/twitter/follow/lovnishofficial?logo=twitter&style=for-the-badge" alt="lovnishofficial" /></a> </p>
 
