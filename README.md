@@ -54,7 +54,7 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/princelv84" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="princelv84" height="30" width="40" /></a>
-<a href="https://twitter.com/princelv84" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="princelv84" height="30" width="40" /></a>
+<a href="https://x.com/lovnishofficial" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="princelv84" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/lovnishverma" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="in/lovnishverma" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/29374730/lovnish-verma" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="29374730/lovnish-verma" height="30" width="40" /></a>
 <a href="https://kaggle.com/princelv84/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="princelv84/" height="30" width="40" /></a>
