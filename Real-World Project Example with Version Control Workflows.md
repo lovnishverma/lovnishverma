@@ -1,5 +1,3 @@
----
-
 # Real-World Project Example with Version Control Workflows
 
 ### Project: **Simple Blog Application**
@@ -150,4 +148,4 @@
   git commit
   ```
 
----
+
