@@ -18,7 +18,7 @@
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 
 <h3 align="center">
- An independent and self-motivated Computer Engineer with hands-on experience in Web & Software Development, AI & ML, Big Data, Predictive Analytics and more....... 
+ I’m Lovnish Verma, a passionate Software Developer and AI/ML Engineer with expertise in software development, data science, machine learning, automation, and cloud computing. I specialize in building scalable web applications, intelligent systems, and data-driven solutions that drive innovation and efficiency. 
 
 Eager to solve challenging problems and always enthusiastic about learning new technologies.
 </h3>
