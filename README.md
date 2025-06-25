@@ -13,7 +13,7 @@
     <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views Counter" />
 </p>
 
-
+<img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300" height="200" alt="GIF 1"/>
 
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 
@@ -24,8 +24,9 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 </h3>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" width="300" height="250" alt="GIF 1"/>
-  <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300" height="200" alt="GIF 2"/>
+  <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" width="300" height="250" alt="GIF 2"/>
+  <img src="https://github.com/user-attachments/assets/732f7076-b600-4b4e-b640-ee062d2ca231" width="300" height="250" alt="GIF 3"/>
+
 </div>
 <h3 align="center">A passionate Computer Engineer from India</h3>
 
