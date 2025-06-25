@@ -54,7 +54,7 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 - ⚡ Fun fact **I believe in collaboration and making work fun for everyone around me!**
 
 <div align="center">
-  <img src="https://github.com/lovnishverma/lovnishverma/github-user-contribution.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/lovnishverma/lovnishverma/refs/heads/main/github-user-contribution.svg" alt="Snake animation" />
 </div>
 
 
