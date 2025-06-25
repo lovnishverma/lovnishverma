@@ -16,6 +16,7 @@
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300" height="200" alt="GIF 1"/>
 </div>
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
+<h3 align="center">Welcome to my GitHub profile!</h3>
 
 <h3 align="center">
  I’m Lovnish Verma, a passionate Software Developer and AI/ML Engineer with expertise in software development, data science, machine learning, automation, and cloud computing. I specialize in building scalable web applications, intelligent systems, and data-driven solutions that drive innovation and efficiency. 
@@ -51,6 +52,11 @@ Eager to solve challenging problems and always enthusiastic about learning new t
 - 📄 Know about my experiences [https://lovnish.glitch.me/](https://lovnish.glitch.me/)
 
 - ⚡ Fun fact **I believe in collaboration and making work fun for everyone around me!**
+
+<div align="center">
+  <img src="https://github.com/lovnishverma/lovnishverma/raw/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</div>
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
