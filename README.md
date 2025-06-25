@@ -12,9 +12,9 @@
 <p align="center">
     <img src="https://komarev.com/ghpvc/?username=lovnishverma&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views Counter" />
 </p>
-<center>
+<div align="center">
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="300" height="200" alt="GIF 1"/>
-</center>
+</div>
 <h1 align="center">Hi 👋, I'm Lovnish Verma</h1>
 
 <h3 align="center">
