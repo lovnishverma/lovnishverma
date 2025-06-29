@@ -41,7 +41,7 @@ I’m always eager to tackle challenging problems and enthusiastic about learnin
 
 - 👯 I’m looking to collaborate on [Brain Tumor Detection Project](https://huggingface.co/spaces/LovnishVerma/braintumor)
 
-- 🤝 I’m looking for help with **Creating our own Blockchain Network**
+- 🤝 I’m looking for help with **[Setting Up my Local Ethereum Blockchain Network](https://github.com/lovnishverma/CertiChain)**
 
 - 👨‍💻 All of my projects are available at [https://glitch.com/@lovnishverma](https://glitch.com/@lovnishverma)
 
