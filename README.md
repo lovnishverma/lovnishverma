@@ -6,9 +6,9 @@
     <a href="https://orcid.org/0009-0009-3992-030X" target="_blank">
         <img src="https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=for-the-badge&logo=orcid" alt="ORCID Profile">
     </a>
-    <iframe src="https://github.com/sponsors/lovnishverma/button" title="Sponsor lovnishverma" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-
-    <iframe src="https://github.com/sponsors/lovnishverma/card" title="Sponsor lovnishverma" height="225" width="600" style="border: 0;"></iframe>
+    <a href="https://github.com/sponsors/lovnishverma" target="_blank">
+    <img src="https://img.shields.io/badge/Sponsor%20on-GitHub-fafbfc?style=for-the-badge&logo=github&logoColor=black" 
+         alt="GitHub Sponsor Badge"/>
 </div>
 
 <!-- Profile Views Counter (center Aligned) -->
