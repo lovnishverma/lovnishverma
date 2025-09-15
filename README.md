@@ -1,5 +1,6 @@
 # 👨🏻‍💻 Hi there, I'm Lovnish Verma 👋
 
+<div align="center">
 <div align="left"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" alt="Typing SVG" /> </div>
 
 <p align="left">
@@ -17,7 +18,6 @@
   </a>
 </p>
 
-<p align="center">
 ![input](https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d)
 </div>
 
