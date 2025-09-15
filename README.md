@@ -18,7 +18,8 @@
   </a>
 </p>
 
-![input](https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d)  ![compressed](https://github.com/user-attachments/assets/8505c01a-9c0d-49ea-82b9-780cc5674310)
+![INTRO GIF 1](https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d)  ![INTRO GIF 2](https://github.com/user-attachments/assets/251f7274-dfbb-4ae7-adc1-1f8c81ab610f)
+
 
 </div>
 
