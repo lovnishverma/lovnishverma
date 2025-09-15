@@ -7,13 +7,13 @@
         <img src="https://img.shields.io/badge/ORCID-0009--0009--3992--030X-green?style=for-the-badge&logo=orcid" alt="ORCID Profile">
     </a>
     <a href="https://github.com/sponsors/lovnishverma" target="_blank">
-    <img src="https://img.shields.io/badge/Sponsor%20on-GitHub-fafbfc?style=for-the-badge&logo=github&logoColor=black" 
-         alt="GitHub Sponsor Badge"/>
-
+        <img src="https://img.shields.io/badge/Sponsor%20on-GitHub-fafbfc?style=for-the-badge&logo=github&logoColor=black" alt="GitHub Sponsor Badge"/>
+    </a>
     <a href="https://huggingface.co/LovnishVerma" target="_blank">
         <img src="https://img.shields.io/badge/Hugging%20Face-orange?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face Badge"/>
     </a>
 </div>
+
 
 <!-- Profile Views Counter (center Aligned) -->
 <p align="center">
