@@ -1,4 +1,4 @@
-# Hi there, I'm Lovnish Verma 👋
+# 👨🏻‍💻 Hi there, I'm Lovnish Verma 👋
 
 <div align="left"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" alt="Typing SVG" /> </div>
 
@@ -74,7 +74,7 @@ I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELI
 
 </div>
 
-## 📊 GitHub Analytics
+## 📈 GitHub Analytics
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
@@ -100,11 +100,11 @@ I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELI
 
 </div>
 
-## 🌐 Connect With Me
+## 🤝 Connect With Me
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://lovnish.glitch.me/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://lovnishverma.github.io/)
 [![X/Twitter](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/lovnishofficial)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/lovnishofficial)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@lovnishverma)
