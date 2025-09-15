@@ -6,7 +6,7 @@
        style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" />
 </p>
 
-<p align="center">
+<p align="left">
   <a href="https://www.linkedin.com/in/lovnishverma">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
   </a>
