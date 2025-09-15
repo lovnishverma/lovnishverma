@@ -1,7 +1,9 @@
 # Hi there, I'm Lovnish Verma 👋
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" 
+       alt="Typing SVG" 
+       style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" />
 </p>
 
 <p align="center">
