@@ -33,7 +33,7 @@ I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELI
 - 🌱 **Learning**: Django, React, and advanced ML architectures
 - 👯 **Collaborating on**: [Brain Tumor Detection](https://huggingface.co/spaces/LovnishVerma/braintumor)
 - 🤝 **Seeking help with**: [CertiChain - Ethereum Blockchain Network](https://github.com/lovnishverma/CertiChain)
-- 💡 **Ask me about**: AI/ML, Data Science, Web Development, IOT, Cloud Computing, Edge COmputing
+- 💡 **Ask me about**: AI/ML, Data Science, Big Data, Web Development, IOT, Cloud Computing, Edge Computing
 
 ## 🛠️ Tech Stack
 
