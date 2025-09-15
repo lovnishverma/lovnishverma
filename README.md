@@ -1,9 +1,9 @@
 # Hi there, I'm Lovnish Verma 👋
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" 
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" 
        alt="Typing SVG" 
-       style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" />
+       style="max-width: 90%; display: block; margin-left: auto; margin-right: auto;" />
 </p>
 
 <p align="center">
@@ -20,7 +20,6 @@
     <img src="https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge" alt="Hugging Face Badge" />
   </a>
 </p>
-
 
 ## 🙎🏻‍♂️ About Me
 
