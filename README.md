@@ -20,7 +20,7 @@
 
 ## 🙎🏻‍♂️ About Me
 
-I'm a passionate **Software Developer** and **AI/ML Engineer** at [NIELIT Chandigarh](https://nielit.gov.in/chandigarh/index.php), specializing in building scalable web applications, intelligent systems, and data-driven solutions. I thrive on solving complex problems and exploring cutting-edge technologies.
+I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELIT Chandigarh](https://nielit.gov.in/chandigarh/index.php), specializing in building scalable web applications, intelligent systems, and data-driven solutions. I thrive on solving complex problems and exploring cutting-edge technologies.
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=lovnishverma&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
@@ -33,7 +33,7 @@ I'm a passionate **Software Developer** and **AI/ML Engineer** at [NIELIT Chandi
 - 🌱 **Learning**: Django, React, and advanced ML architectures
 - 👯 **Collaborating on**: [Brain Tumor Detection](https://huggingface.co/spaces/LovnishVerma/braintumor)
 - 🤝 **Seeking help with**: [CertiChain - Ethereum Blockchain Network](https://github.com/lovnishverma/CertiChain)
-- 💡 **Ask me about**: AI/ML, Data Science, Web Development, Cloud Computing
+- 💡 **Ask me about**: AI/ML, Data Science, Web Development, IOT, Cloud Computing, Edge COmputing
 
 ## 🛠️ Tech Stack
 
