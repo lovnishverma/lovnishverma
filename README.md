@@ -1,10 +1,7 @@
 # Hi there, I'm Lovnish Verma 👋
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" alt="Typing SVG" />
-</div>
-
-<div align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00D9FF&width=600&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems;Data+Science+Enthusiast;Full-Stack+Developer" alt="Typing SVG" />
   
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lovnishverma)
 [![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0009-3992-030X)
@@ -24,7 +21,7 @@ I'm a passionate **Software Developer** and **AI/ML Engineer** at [NIELIT Chandi
 </div>
 
 
-## 🎯 Current Focus
+## 🧐 Current Focus
 
 - 🔭 **Working on**: AI/ML projects at NIELIT Chandigarh
 - 🌱 **Learning**: Django, React, and advanced ML architectures
@@ -92,7 +89,7 @@ I'm a passionate **Software Developer** and **AI/ML Engineer** at [NIELIT Chandi
 
 <div align="center">
 
-[![Brain Tumor Detection](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=braintumor&theme=tokyonight&hide_border=true)](https://huggingface.co/spaces/LovnishVerma/braintumor)
+[![Brain Tumor Detection](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=huggingface-Braintumor-Flask&theme=tokyonight&hide_border=true)](https://huggingface.co/spaces/LovnishVerma/braintumor)
 [![CertiChain](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=CertiChain&theme=tokyonight&hide_border=true)](https://github.com/lovnishverma/CertiChain)
 
 </div>
