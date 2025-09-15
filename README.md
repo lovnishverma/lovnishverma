@@ -86,6 +86,8 @@ I’m always eager to tackle challenging problems and enthusiastic about learnin
 
 ![Lovnish's GitHub stats](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=radical)
 
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-profile-orange?style=for-the-badge&logo=huggingface)](https://huggingface.co/LovnishVerma)
+
 ---
 
 
