@@ -1,9 +1,9 @@
 # <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" /> Hi there, I'm Lovnish Verma
 
-<div align="center">
-
 <!-- Animated Header -->
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0A66C2&height=300&section=header&text=Software%20Developer%20|%20AI%2FML%20Engineer&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20Intelligent%20Systems%20%26%20Transforming%20Ideas%20into%20Digital%20Reality&descAlignY=51&descAlign=62)
+
+<div align="center">
 
 <!-- Dynamic Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=900&height=120&lines=🚀+Full-Stack+Developer+%7C+AI%2FML+Engineer;🤖+Building+Intelligent+Systems;📊+Transforming+Data+into+Insights;☁️+Cloud+%26+DevOps+Enthusiast;🔗+Blockchain+%26+Web3+Developer)](https://git.io/typing-svg)
@@ -31,8 +31,8 @@
 </p>
 
 <!-- Animated GIFs -->
-<img align="right" alt="Lovnish Verma Coding" width="400" src="https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d"/>
-<img align="left" alt="Lovnish Verma AI ML" width="400" src="https://github.com/user-attachments/assets/251f7274-dfbb-4ae7-adc1-1f8c81ab610f"/>
+<img alt="Lovnish Verma Coding" width="400" src="https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d"/>
+<img alt="Lovnish Verma AI ML" width="400" src="https://github.com/user-attachments/assets/251f7274-dfbb-4ae7-adc1-1f8c81ab610f"/>
 
 <br clear="both"/>
 
@@ -90,12 +90,14 @@ const lovnish = {
 
 <div align="center">
 
-<!-- Enhanced GitHub Stats -->
+<!-- GitHub Stats -->
 <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&custom_title=Lovnish's%20GitHub%20Stats&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=00d9ff"/>
 <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true&custom_title=Most%20Used%20Languages&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&langs_count=10"/>
 
 <!-- GitHub Streak -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=lovnishverma&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d9ff&ring=00d9ff&fire=ff6b35&currStreakLabel=00d9ff" alt="GitHub Streak"/>
+<p align="center">
+  <img src="https://github-readme-streak-stats-eight.vercel.app?user=lovnishverma&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</p>
 
 <!-- Contribution Graph -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=lovnishverma&custom_title=Contribution%20Activity&bg_color=0d1117&color=00d9ff&line=00d9ff&point=ff6b35&area=true&hide_border=true" alt="Contribution Graph"/>
