@@ -1,56 +1,9 @@
-![api](https://github.com/user-attachments/assets/f8e07bbb-ca98-4aac-acd6-65a9617ebaaf)# <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" /> Hi there, I'm Lovnish Verma
-
-<!-- Animated Header -->
-
-      <svg
-        width="854"
-        height="300"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="z-index:1;position:relative"
-        viewBox="0 0 854 300"
-      >
-        <style>
-      .text {   font-size: 40px;   font-weight: 700;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } .desc {   font-size: 20px;   font-weight: 500;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } 
-      .text, .desc {   animation: fadeIn 1.2s ease-in-out forwards;  } @keyframes fadeIn {   from {     opacity: 0;   }   to {     opacity: 1;   }  } 
-    </style>
-        <defs>
-              <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#00D9FF"/><stop offset="100%" stop-color="#0A66C2"/>
-              </linearGradient>
-            </defs>
-        
-      <g transform="translate(427, 150) scale(1, 1) translate(-427, -150)">
-        <path d="" fill="url(#linear)" opacity="0.4" >
-          <animate
-              attributeName="d"
-              dur="20s"
-              repeatCount="indefinite"
-              keyTimes="0;0.333;0.667;1"
-              calcmod="spline"
-              keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-              begin="0s"
-              values="M0 0L 0 220Q 213.5 260 427 230T 854 255L 854 0 Z;M0 0L 0 245Q 213.5 260 427 240T 854 230L 854 0 Z;M0 0L 0 265Q 213.5 235 427 265T 854 230L 854 0 Z;M0 0L 0 220Q 213.5 260 427 230T 854 255L 854 0 Z">
-          </animate>
-        </path>
-        <path d="" fill="url(#linear)" opacity="0.4" >
-          <animate
-            attributeName="d"
-            dur="20s"
-            repeatCount="indefinite"
-            keyTimes="0;0.333;0.667;1"
-            calcmod="spline"
-            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-            begin="-10s"
-            values="M0 0L 0 235Q 213.5 280 427 250T 854 260L 854 0 Z;M0 0L 0 250Q 213.5 220 427 220T 854 240L 854 0 Z;M0 0L 0 245Q 213.5 225 427 250T 854 265L 854 0 Z;M0 0L 0 235Q 213.5 280 427 250T 854 260L 854 0 Z">
-          </animate>
-        </path>
-      </g>
-         <text text-anchor="middle" alignment-baseline="middle" x="50%" y="38%" class="text" style="fill:#ffffff;" stroke="#none" stroke-width="1" >Software Developer | AI/ML Engineer</text>
-        <text text-anchor="middle" alignment-baseline="middle" x="62%" y="51%" class="desc" style="fill:#ffffff;">Building Intelligent Systems & Transforming Ideas into Digital Reality</text>
-      </svg>
+# <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" /> Hi there, I'm Lovnish Verma
 
 <div align="center">
+
+<!-- Animated Header -->
+<img width="100%" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=4000&pause=1000&color=00D9FF&background=0D111700&center=true&vCenter=true&width=1000&height=100&lines=👋+Welcome+to+Lovnish+Verma's+GitHub+Profile;🚀+Software+Developer+%7C+AI%2FML+Engineer;💡+Building+Intelligent+Systems+%26+Solutions" alt="Header"/>
 
 <!-- Dynamic Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=900&height=120&lines=🚀+Full-Stack+Developer+%7C+AI%2FML+Engineer;🤖+Building+Intelligent+Systems;📊+Transforming+Data+into+Insights;☁️+Cloud+%26+DevOps+Enthusiast;🔗+Blockchain+%26+Web3+Developer)](https://git.io/typing-svg)
@@ -138,12 +91,12 @@ const lovnish = {
 <div align="center">
 
 <!-- GitHub Stats -->
-<img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&custom_title=Lovnish's%20GitHub%20Stats&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=00d9ff"/>
-<img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true&custom_title=Most%20Used%20Languages&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&langs_count=10"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&custom_title=Lovnish's%20GitHub%20Stats&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=00d9ff"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true&custom_title=Most%20Used%20Languages&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&langs_count=10"/>
 
 <!-- GitHub Streak -->
 <p align="center">
-  <img src="https://github-readme-streak-stats-eight.vercel.app?user=lovnishverma&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=lovnishverma&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d9ff&ring=00d9ff&fire=ff6b35&currStreakLabel=00d9ff" alt="GitHub Streak"/>
 </p>
 
 <!-- Contribution Graph -->
@@ -304,9 +257,6 @@ const lovnish = {
 <!-- GitHub Trophies -->
 <img src="https://github-profile-trophy.vercel.app/?username=lovnishverma&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15&title=Stars,Commits,Repositories,PullRequest" alt="GitHub Trophies"/>
 
-<!-- WakaTime Stats -->
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=lovnishverma&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&custom_title=Weekly%20Development%20Breakdown" alt="WakaTime Stats"/>
-
 </div>
 
 ---
@@ -410,6 +360,8 @@ const lovnish = {
 </div>
 
 <!-- Footer -->
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0A66C2&height=120&section=footer)
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D9FF&background=0D111700&center=true&vCenter=true&width=800&lines=Thanks+for+visiting!+⭐+Star+my+repos+if+you+like+them;Connect+with+me+on+LinkedIn+and+let's+collaborate!" alt="Footer"/>
+</div>
 
 </div>
