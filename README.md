@@ -29,8 +29,7 @@ I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELI
 
   <!-- GitHub Streak -->
 
-![GitHub Streak](https://streak-stats.demolab.com?user=lovnishverma&theme=tokyonight&hide_border=true)
-
+![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app?user=lovnishverma&theme=tokyonight&hide_border=true)
 
 ## 🧐 Current Focus
 
