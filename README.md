@@ -5,8 +5,6 @@
 <!-- Animated Header -->
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0A66C2&height=300&section=header&text=Software%20Developer%20%7C%20AI-ML%20Engineer&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20Intelligent%20Systems%20and%20Transforming%20Ideas%20into%20Digital%20Reality&descAlign=center&descAlignY=60)
 
-
-
 <!-- Animated Header -->
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=4000&pause=1000&color=00D9FF&background=0D111700&center=true&vCenter=true&width=1000&height=100&lines=👋+Welcome+to+Lovnish+Verma's+GitHub+Profile;🚀+Software+Developer+%7C+AI%2FML+Engineer;💡+Building+Intelligent+Systems+%26+Solutions)
 
