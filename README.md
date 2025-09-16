@@ -317,7 +317,7 @@ lovnish = {
 
 [![Buy Me A Coffee](https://img.shields.io/badge/☕%20Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=FFDD00)](https://buymeacoffee.com/lovnishverma)
 [![GitHub Sponsors](https://img.shields.io/badge/💖%20GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white&labelColor=EA4AAA)](https://github.com/sponsors/lovnishverma)
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge&labelColor=FFD21E)](https://huggingface.co/LovnishVerma)
+[![PayPal](https://img.shields.io/badge/💵%20PayPal-003087?style=for-the-badge&logo=paypal&logoColor=white&labelColor=003087)](https://www.paypal.com/paypalme/princelv)
 
 </div>
 
