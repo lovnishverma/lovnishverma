@@ -18,7 +18,7 @@
   </a>
 </p>
 
-![INTRO GIF 1](https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d)  ![INTRO GIF 2](https://github.com/user-attachments/assets/251f7274-dfbb-4ae7-adc1-1f8c81ab610f)
+![LOVNISH VERMA GIF 1](https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d)  ![LOVNISH VERMA GIF 2](https://github.com/user-attachments/assets/251f7274-dfbb-4ae7-adc1-1f8c81ab610f)
 
 
 </div>
@@ -27,9 +27,10 @@
 
 I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELIT Chandigarh](https://nielit.gov.in/chandigarh/index.php), specializing in building scalable web applications, intelligent systems, and data-driven solutions. I thrive on solving complex problems and exploring cutting-edge technologies.
 
-  <!-- GitHub Streak -->
-
+<!-- GitHub Streak -->
+<div align="center">
 ![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app?user=lovnishverma&theme=tokyonight&hide_border=true)
+</div>
 
 ## 🧐 Current Focus
 
