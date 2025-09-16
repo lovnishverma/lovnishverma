@@ -28,8 +28,27 @@
 I'm a passionate **Software Developer** and **AI/ML Project Engineer** at [NIELIT Chandigarh](https://nielit.gov.in/chandigarh/index.php), specializing in building scalable web applications, intelligent systems, and data-driven solutions. I thrive on solving complex problems and exploring cutting-edge technologies.
 
 <div align="center">
-![GitHub Streak](https://streak-stats.demolab.com?user=lovnishverma&theme=tokyonight&hide_border=true)
+  <!-- GitHub Streak -->
+  <img 
+    src="https://streak-stats.demolab.com?user=lovnishverma&theme=tokyonight&hide_border=true" 
+    alt="GitHub Streak" 
+  />
+  
+  <!-- GitHub Stats -->
+  <br/><br/>
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&hide_border=true" 
+    alt="GitHub Stats" 
+  />
+
+  <!-- Top Languages -->
+  <br/><br/>
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true" 
+    alt="Top Languages" 
+  />
 </div>
+
 
 
 ## 🧐 Current Focus
