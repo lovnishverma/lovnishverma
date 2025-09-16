@@ -6,7 +6,7 @@
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=4000&pause=1000&color=00D9FF&background=0D111700&center=true&vCenter=true&width=1000&height=100&lines=👋+Welcome+to+Lovnish+Verma's+GitHub+Profile;🚀+Software+Developer+%7C+AI%2FML+Engineer;💡+Building+Intelligent+Systems+%26+Solutions)
 
 <!-- Dynamic Typing Animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=900&height=120&lines=🚀+Full-Stack+Developer+%7C+AI%2FML+Engineer;🤖+Building+Intelligent+Systems;📊+Transforming+Data+into+Insights;☁️+Cloud+%26+DevOps+Enthusiast;🔗+Blockchain+%26+Web3+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=900&height=120&lines=🚀+Full-Stack+Developer+%7C+AI%2FML+Engineer;🤖+Building+Intelligent+Systems;📊+Transforming+Data+into+Insights;☁️+Cloud+%26+DevOps+Enthusiast;🔗+Blockchain+%26+Web3+Developer)](https://git.io/typing-svg)
 
 <br>
 <!-- Professional Badges -->
