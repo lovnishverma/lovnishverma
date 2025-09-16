@@ -3,7 +3,8 @@
 <div align="center">
 
 <!-- Animated Header -->
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0A66C2&height=300&section=header&text=Software%20Developer%20%7C%20AI-ML%20Engineer&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20Intelligent%20Systems%20and%20Transforming%20Ideas%20into%20Digital%20Reality&descAlignY=51&descAlign=62)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0A66C2&height=300&section=header&text=Software%20Developer%20%7C%20AI-ML%20Engineer&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20Intelligent%20Systems%20and%20Transforming%20Ideas%20into%20Digital%20Reality&descAlign=center&descAlignY=60)
+
 
 
 <!-- Animated Header -->
