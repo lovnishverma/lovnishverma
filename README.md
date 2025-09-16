@@ -91,9 +91,9 @@ const lovnish = {
 
 <div align="center">
 
-<!-- GitHub Stats -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&custom_title=Lovnish's%20GitHub%20Stats&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=00d9ff"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true&custom_title=Most%20Used%20Languages&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&langs_count=10"/>
+<!-- Stats and Languages -->
+<img height="200em" src="https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&card_width=400"/>
+<img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true&card_width=400&langs_count=8"/>
 
 <!-- GitHub Streak -->
 <p align="center">
