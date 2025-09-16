@@ -216,7 +216,7 @@ lovnish = {
 
 <div align="center">
 
-**💬 Ask me about**: `AI/ML` • `Data Science` • `Web Development` • `Cloud Computing` • `IoT` • `Blockchain` • `DevOps`
+**💬 Ask me about**: `AI/ML` • `Data Science` • `Web Development` • `Cloud Computing` • `IoT` • `Blockchain` • `Edge Computing`
 
 </div>
 
