@@ -4,6 +4,8 @@
 
 ![Typing Animation](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=800&height=100&lines=Software+Developer+%7C+AI%2FML+Engineer;Building+Intelligent+Systems+%26+Data+Solutions;Transforming+Ideas+into+Digital+Reality)
 
+
+<br>
 <p align="center">
   <a href="https://www.linkedin.com/in/lovnishverma">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
