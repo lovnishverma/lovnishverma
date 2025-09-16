@@ -362,7 +362,11 @@ const lovnish = {
 
 <!-- Footer -->
 <div align="center">
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D9FF&background=0D111700&center=true&vCenter=true&width=800&lines=Thanks+for+visiting!+⭐+Star+my+repos+if+you+like+them;Connect+with+me+on+LinkedIn+and+let's+collaborate!)
+  <img 
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D9FF&background=0D111700&center=true&vCenter=true&width=800&lines=Thanks+for+visiting!+⭐+Star+my+repos+if+you+like+them;Connect+with+me+on+LinkedIn+and+let's+collaborate!" 
+    alt="Typing SVG" 
+  />
 </div>
+
 
 </div>
