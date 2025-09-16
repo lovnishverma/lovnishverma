@@ -56,14 +56,23 @@
 I'm a **Full-Stack Developer** and **AI/ML Engineer** who specializes in creating **scalable web applications**, **intelligent systems**, and **data-driven solutions**. With expertise spanning from frontend frameworks to machine learning deployment, I bridge the gap between complex technical concepts and practical, user-friendly applications.
 
 ### 🌟 **What Sets Me Apart**
-```javascript
-const lovnish = {
-    role: "Software Developer & AI/ML Engineer",
-    location: "Chandigarh, India",
-    specialization: ["Full-Stack Development", "AI/ML", "Data Science", "Cloud Computing"],
-    currentlyLearning: ["Advanced React Patterns", "MLOps", "Kubernetes"],
-    funFact: "I turn coffee into code and data into insights! ☕→💻"
-};
+```python
+lovnish = {
+    "role": "Software Developer & AI/ML Engineer",
+    "location": "Chandigarh, India",
+    "specialization": [
+        "Full-Stack Development",
+        "AI/ML",
+        "Data Science",
+        "Cloud Computing"
+    ],
+    "currently_learning": [
+        "Advanced React Patterns",
+        "MLOps",
+        "Kubernetes"
+    ],
+    "fun_fact": "I turn coffee into code and data into insights! ☕→💻"
+}
 ```
 
 ### 🎯 **Core Competencies**
