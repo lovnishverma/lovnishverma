@@ -223,7 +223,7 @@ const lovnish = {
 
 [![Brain Tumor Detection](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=huggingface-Braintumor-Flask&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ff6b35)](https://huggingface.co/spaces/LovnishVerma/braintumor)
 
-**Tech Stack**: `Python` `TensorFlow` `Flask` `OpenCV` `Hugging Face`
+**Tech Stack**: `Python` `TensorFlow` `Flask` `MongoDB` `OpenCV` `Hugging Face`
 
 ✨ Deep learning model for medical image analysis  
 🎯 95%+ accuracy in tumor detection  
@@ -237,7 +237,7 @@ const lovnish = {
 
 [![CertiChain](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=CertiChain&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ff6b35)](https://github.com/lovnishverma/CertiChain)
 
-**Tech Stack**: `Solidity` `Web3.js` `React` `Node.js` `MongoDB`
+**Tech Stack**: `Solidity` `Web3.js` `MetaMask` `Django` `SQLite`
 
 🔐 Immutable certificate storage  
 ⚡ Smart contract automation  
