@@ -19,7 +19,8 @@
   </a>
 </p>
 
-<img width="400" src="https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d" alt="Coding Animation"/>
+![LOVNISH VERMA GIF 1](https://github.com/user-attachments/assets/142b62f8-4389-4e09-82ba-7dd1dcf9196d)  ![LOVNISH VERMA GIF 2](https://github.com/user-attachments/assets/251f7274-dfbb-4ae7-adc1-1f8c81ab610f)
+
 
 </div>
 
