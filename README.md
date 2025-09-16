@@ -1,7 +1,54 @@
-# <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" /> Hi there, I'm Lovnish Verma
+![api](https://github.com/user-attachments/assets/f8e07bbb-ca98-4aac-acd6-65a9617ebaaf)# <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" /> Hi there, I'm Lovnish Verma
 
 <!-- Animated Header -->
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0A66C2&height=300&section=header&text=Software%20Developer%20|%20AI%2FML%20Engineer&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20Intelligent%20Systems%20%26%20Transforming%20Ideas%20into%20Digital%20Reality&descAlignY=51&descAlign=62)
+
+      <svg
+        width="854"
+        height="300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="z-index:1;position:relative"
+        viewBox="0 0 854 300"
+      >
+        <style>
+      .text {   font-size: 40px;   font-weight: 700;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } .desc {   font-size: 20px;   font-weight: 500;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } 
+      .text, .desc {   animation: fadeIn 1.2s ease-in-out forwards;  } @keyframes fadeIn {   from {     opacity: 0;   }   to {     opacity: 1;   }  } 
+    </style>
+        <defs>
+              <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00D9FF"/><stop offset="100%" stop-color="#0A66C2"/>
+              </linearGradient>
+            </defs>
+        
+      <g transform="translate(427, 150) scale(1, 1) translate(-427, -150)">
+        <path d="" fill="url(#linear)" opacity="0.4" >
+          <animate
+              attributeName="d"
+              dur="20s"
+              repeatCount="indefinite"
+              keyTimes="0;0.333;0.667;1"
+              calcmod="spline"
+              keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
+              begin="0s"
+              values="M0 0L 0 220Q 213.5 260 427 230T 854 255L 854 0 Z;M0 0L 0 245Q 213.5 260 427 240T 854 230L 854 0 Z;M0 0L 0 265Q 213.5 235 427 265T 854 230L 854 0 Z;M0 0L 0 220Q 213.5 260 427 230T 854 255L 854 0 Z">
+          </animate>
+        </path>
+        <path d="" fill="url(#linear)" opacity="0.4" >
+          <animate
+            attributeName="d"
+            dur="20s"
+            repeatCount="indefinite"
+            keyTimes="0;0.333;0.667;1"
+            calcmod="spline"
+            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
+            begin="-10s"
+            values="M0 0L 0 235Q 213.5 280 427 250T 854 260L 854 0 Z;M0 0L 0 250Q 213.5 220 427 220T 854 240L 854 0 Z;M0 0L 0 245Q 213.5 225 427 250T 854 265L 854 0 Z;M0 0L 0 235Q 213.5 280 427 250T 854 260L 854 0 Z">
+          </animate>
+        </path>
+      </g>
+         <text text-anchor="middle" alignment-baseline="middle" x="50%" y="38%" class="text" style="fill:#ffffff;" stroke="#none" stroke-width="1" >Software Developer | AI/ML Engineer</text>
+        <text text-anchor="middle" alignment-baseline="middle" x="62%" y="51%" class="desc" style="fill:#ffffff;">Building Intelligent Systems & Transforming Ideas into Digital Reality</text>
+      </svg>
 
 <div align="center">
 
