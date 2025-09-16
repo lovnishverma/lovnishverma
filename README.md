@@ -8,6 +8,7 @@
 <!-- Dynamic Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=900&height=120&lines=🚀+Full-Stack+Developer+%7C+AI%2FML+Engineer;🤖+Building+Intelligent+Systems;📊+Transforming+Data+into+Insights;☁️+Cloud+%26+DevOps+Enthusiast;🔗+Blockchain+%26+Web3+Developer)](https://git.io/typing-svg)
 
+<br>
 <!-- Professional Badges -->
 <p align="center">
   <a href="https://www.linkedin.com/in/lovnishverma">
