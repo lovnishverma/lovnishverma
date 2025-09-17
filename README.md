@@ -49,7 +49,7 @@
 > ### **🎯 Passionate Software Developer & AI/ML Project Engineer**  
 > **📍 Currently at [NIELIT Chandigarh](https://nielit.gov.in/chandigarh/index.php)**
 
-<img align="right" alt="Developer" width="300" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjZyc3dnczZnZWJ5Zmg4eHczcmlyb240ajJuNDFldThha29kNTNpeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S9d8XB557e8phGLBVS/giphy.gif"/>
+<img alt="Developer" width="300" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjZyc3dnczZnZWJ5Zmg4eHczcmlyb240ajJuNDFldThha29kNTNpeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S9d8XB557e8phGLBVS/giphy.gif"/>
 
 I'm a **Full-Stack Developer** and **AI/ML Engineer** who specializes in creating **scalable web applications**, **intelligent systems**, and **data-driven solutions**. With expertise spanning from frontend frameworks to machine learning deployment, I bridge the gap between complex technical concepts and practical, user-friendly applications.
 
