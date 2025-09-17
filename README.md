@@ -170,7 +170,7 @@ lovnish = {
 
 ## 🔧 **Programming Languages**
 <p>
-  <img src="https://skillicons.dev/icons?i=cpp,c,java,php,scala" alt="Programming Languages"/>
+  <img src="https://skillicons.dev/icons?i=cpp,c,java,python,php,scala" alt="Programming Languages"/>
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R"/>
 </p>
 
