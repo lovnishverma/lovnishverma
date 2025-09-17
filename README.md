@@ -123,7 +123,7 @@ lovnish = {
 
 <div align="center">
 
-### 🧠 **AI/ML & Data Science**
+## 🐍 **AI/ML & Data Science**
 <p>
   <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch" alt="AI/ML Core"/>
   <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/>
@@ -132,44 +132,57 @@ lovnish = {
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
   <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"/>
 </p>
 
-### 💻 **Web Development**
+---
+
+## 💻 **Web Development**
 <p>
-  <img src="https://skillicons.dev/icons?i=react,nodejs,django,flask,js,html,css,bootstrap" alt="Web Development"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,typescript,django,flask,fastapi,gradio,js,html,css,bootstrap,tailwind" alt="Web Development"/>
 </p>
 
-### 🗄️ **Databases & Storage**
+---
+
+## 🗄️ **Databases & Big Data**
 <p>
   <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis" alt="Databases"/>
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase"/>
+  <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white" alt="Apache Spark"/>
+  <img src="https://img.shields.io/badge/Hadoop-66CCFF?style=for-the-badge&logo=apache-hadoop&logoColor=black" alt="Hadoop"/>
 </p>
 
-### ☁️ **Cloud & DevOps**
+---
+
+## ☁️ **Cloud & DevOps**
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,git,github" alt="Cloud & DevOps"/>
+  <img src="https://skillicons.dev/icons?i=aws,gcp,docker,kubernetes,git,github" alt="Cloud & DevOps"/>
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
 </p>
 
-### 🔧 **Programming Languages**
+---
+
+## 🔧 **Programming Languages**
 <p>
-  <img src="https://skillicons.dev/icons?i=cpp,c,php,scala,java" alt="Programming Languages"/>
+  <img src="https://skillicons.dev/icons?i=cpp,c,java,php,scala" alt="Programming Languages"/>
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R"/>
 </p>
 
-### 🛠️ **Development Tools**
+---
+
+## 🛠️ **Development Tools**
 <p>
   <img src="https://skillicons.dev/icons?i=vscode,pycharm,postman,figma" alt="Development Tools"/>
   <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda"/>
   <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=black" alt="Google Colab"/>
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
 </p>
-
 </div>
 
 ---
