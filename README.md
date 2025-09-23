@@ -26,6 +26,10 @@
   <a href="https://huggingface.co/LovnishVerma">
     <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge&labelColor=FFD21E&color=FF6B35" alt="Hugging Face" />
   </a>
+  <a href="https://www.kaggle.com/princelv84">
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+</a>
+  
 </p>
 
 <!-- Profile Views Counter -->
