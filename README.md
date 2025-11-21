@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<!-- 🎥 YouTube Channel -->
+<!-- 🎥 My YouTube Channel -->
 <a href="https://www.youtube.com/@lovnishverma" target="_blank">
   <img src="https://img.shields.io/badge/YouTube-%40LovnishVerma-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000" alt="YouTube Channel" />
 </a>
