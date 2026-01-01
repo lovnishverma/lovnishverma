@@ -1,6 +1,6 @@
 # <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" /> Hi there, I'm Lovnish Verma
 
-
+<div align="center">
 
 <!-- 🎥 My YouTube Channel -->
 <a href="https://www.youtube.com/@lovnishverma" target="_blank">
