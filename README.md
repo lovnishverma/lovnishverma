@@ -2,6 +2,16 @@
 
 <div align="center">
 
+<div class="youtube-subscribe">
+  <div class="g-ytsubscribe"
+       data-channelid="UCMOkjPo_IECgZFEOEvGaZ3w"
+       data-layout="full"
+       data-count="default"
+       data-theme="default">
+  </div>
+</div>
+<script src="https://apis.google.com/js/platform.js"></script>
+
 <!-- 🎥 My YouTube Channel -->
 <a href="https://www.youtube.com/@lovnishverma" target="_blank">
   <img src="https://img.shields.io/badge/YouTube-%40LovnishVerma-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000" alt="YouTube Channel" />
