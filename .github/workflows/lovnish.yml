@@ -1,171 +1,121 @@
 name: lovnishverma
 on:
   schedule:
-    # Multiple runs throughout the day - more commits = more green dots
-    - cron: '0 1 * * *'    # 1 AM
-    - cron: '0 4 * * *'    # 4 AM
-    - cron: '0 7 * * *'    # 7 AM
-    - cron: '0 10 * * *'   # 10 AM
-    - cron: '0 13 * * *'   # 1 PM
-    - cron: '0 16 * * *'   # 4 PM
-    - cron: '0 19 * * *'   # 7 PM
-    - cron: '0 22 * * *'   # 10 PM
-  
+    # Run 3 times a day (approx Morning, Afternoon, Evening in IST)
+    # UTC times: 3:30 AM, 9:30 AM, 3:30 PM -> IST: ~9:00 AM, ~3:00 PM, ~9:00 PM
+    - cron: '30 3,9,15 * * *'
   workflow_dispatch:
 
 jobs:
-  sync:
+  organic-sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      
+    env:
+      TZ: 'Asia/Kolkata' # Force script to use Indian Standard Time
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          
-      - name: Update tracking data
-        run: |
-          mkdir -p .sync/daily .sync/weekly .sync/monthly
-          
-          TIMESTAMP=$(date '+%Y-%m-%d_%H-%M-%S')
-          DATE=$(date '+%Y-%m-%d')
-          
-          # Daily log
-          DAILY_FILE=".sync/daily/data_${DATE}.log"
-          echo "=== Daily Sync Log ===" > $DAILY_FILE
-          echo "Timestamp: $(date '+%Y-%m-%d %H:%M:%S %Z')" >> $DAILY_FILE
-          echo "Day: $(date '+%A')" >> $DAILY_FILE
-          echo "Week: $(date '+%U')" >> $DAILY_FILE
-          echo "Build: $(git rev-list --count HEAD 2>/dev/null || echo 0)" >> $DAILY_FILE
-          echo "Status: OK" >> $DAILY_FILE
-          echo "Checksum: $RANDOM" >> $DAILY_FILE
-          
-          # Hourly log
-          HOURLY_FILE=".sync/data_${TIMESTAMP}.log"
-          echo "=== Hourly Sync ===" > $HOURLY_FILE
-          echo "Time: $(date '+%H:%M:%S')" >> $HOURLY_FILE
-          echo "Unix: $(date +%s)" >> $HOURLY_FILE
-          echo "Random: $RANDOM" >> $HOURLY_FILE
-          
-          # History log
-          echo "[$(date '+%Y-%m-%d %H:%M:%S')] Sync completed successfully" >> .sync/history.log
-          
-          # Weekly summary
-          if [ $(date '+%u') -eq 7 ]; then
-            WEEK=$(date '+%Y-W%U')
-            echo "Weekly Summary for $WEEK" > ".sync/weekly/summary_${WEEK}.log"
-            echo "Total syncs: $(grep -c 'Sync completed' .sync/history.log || echo 0)" >> ".sync/weekly/summary_${WEEK}.log"
-          fi
-          
-      - name: Create multiple commit opportunities
-        run: |
-          # Create different types of files for variety
-          mkdir -p .sync/metrics .sync/reports
-          
-          # Metrics file
-          cat > .sync/metrics/latest.json << EOF
-          {
-            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-            "build": $(git rev-list --count HEAD 2>/dev/null || echo 0),
-            "day": "$(date '+%A')",
-            "random": $RANDOM
-          }
-          EOF
-          
-          # Report file
-          echo "Report generated at $(date)" > .sync/reports/report_$(date '+%Y%m%d_%H%M%S').txt
-          echo "System: OK" >> .sync/reports/report_$(date '+%Y%m%d_%H%M%S').txt
-          
-      - name: Apply timing variance
-        run: |
-          DELAY=$((RANDOM % 300 + 60))
-          echo "Applying timing variance: $DELAY seconds"
-          sleep $DELAY
-          
-      - name: Commit updates (multiple commits)
+          fetch-depth: 1
+
+      - name: Configure Git
         run: |
           git config --global user.name "lovnishverma"
           git config --global user.email "princelv84@gmail.com"
-          
-          MESSAGES=(
-            "Update sync logs and metadata"
-            "Routine tracking data update"
-            "Refresh system metrics"
-            "Log rotation and sync job update"
-            "Periodic repository maintenance"
-            "Update build counter and timestamps"
-            "Record latest sync status"
-            "Refactor sync data structure"
-            "Optimize tracking file layout"
-            "Auto-sync: updated logs"
-            "Improve log accuracy and metadata"
-            "Maintenance: cleanup + new logs"
-            "Update automated tracking entries"
-            "Housekeeping: sync task updates"
-            "Enhance system data consistency"
-            "Sync job: refreshed runtime data"
-            "Auto-update: new tracking snapshot"
-            "Daily metrics update"
-            "Automated log refresh"
-            "Improve workflow metadata"
-            "System health check completed"
-            "Update monitoring data"
-            "Refresh analytics logs"
-            "Backup sync data"
-            "Performance metrics updated"
-          )
-          
-          # Commit 1: Main logs
-          git add .sync/*.log .sync/daily/ .sync/history.log
-          if ! git diff --staged --quiet; then
-            COMMIT_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
-            git commit -m "$COMMIT_MSG"
-          fi
-          
-          # Commit 2: Metrics
-          git add .sync/metrics/
-          if ! git diff --staged --quiet; then
-            COMMIT_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
-            git commit -m "$COMMIT_MSG"
-          fi
-          
-          # Commit 3: Reports
-          git add .sync/reports/
-          if ! git diff --staged --quiet; then
-            COMMIT_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
-            git commit -m "$COMMIT_MSG"
-          fi
-          
-          # Commit 4: Weekly summaries if they exist
-          if [ -d .sync/weekly ] && [ "$(ls -A .sync/weekly)" ]; then
-            git add .sync/weekly/
-            if ! git diff --staged --quiet; then
-              git commit -m "Weekly summary update"
-            fi
-          fi
-          
-          # Push all commits
-          git push
-          
-      - name: Cleanup old logs
+
+      - name: 'Decision Engine: Should we work?'
+        id: decision
         run: |
-          # Keep last 45 days of hourly logs
-          find .sync -name "data_*.log" -type f -mtime +45 -delete
+          # 1. TIME CHECK (IST)
+          HOUR=$(date +%H)
+          DAY=$(date +%u) # 1=Mon, 7=Sun
           
-          # Keep last 90 days of reports
-          find .sync/reports -name "report_*.txt" -type f -mtime +90 -delete
+          echo "Current time (IST): $(date)"
           
-          # Keep last 180 days of daily logs
-          find .sync/daily -name "data_*.log" -type f -mtime +180 -delete
-          
-          # Commit cleanup if changes exist
-          if ! git diff --quiet .sync/ 2>/dev/null; then
-            git config --global user.name "lovnishverma"
-            git config --global user.email "princelv84@gmail.com"
+          # 2. WEEKEND LOGIC
+          # On Sat/Sun, 80% chance to take a break
+          if [ $DAY -ge 6 ]; then
+             ROLL=$(( RANDOM % 10 ))
+             if [ $ROLL -lt 8 ]; then
+                echo "It's the weekend. Taking a break."
+                echo "skip=true" >> $GITHUB_OUTPUT
+                exit 0
+             fi
+          fi
+
+          # 3. WEEKDAY VARIANCE
+          # Even on weekdays, skip 20% of slots to look natural
+          ROLL=$(( RANDOM % 10 ))
+          if [ $ROLL -lt 2 ]; then
+             echo "Skipping this session for natural variance."
+             echo "skip=true" >> $GITHUB_OUTPUT
+             exit 0
+          fi
+
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+      - name: Simulate Development Work
+        if: steps.decision.outputs.skip == 'false'
+        run: |
+          # Create directories
+          mkdir -p .sync/logs .sync/metrics .sync/reports
+
+          # Randomly decide how much work to do (1 to 3 commits)
+          WORK_LOAD=$(( ( RANDOM % 3 ) + 1 ))
+          echo "Simulating $WORK_LOAD tasks..."
+
+          for i in $(seq 1 $WORK_LOAD); do
             
-            git add .sync/
-            git commit -m "Clean up old sync logs"
-            git push
+            # --- TASK 1: UPDATE LOGS ---
+            if [ $(( RANDOM % 2 )) -eq 0 ]; then
+              FILE=".sync/logs/trace.log"
+              echo "$(date '+%Y-%m-%d %H:%M:%S') - System trace" >> $FILE
+              git add $FILE
+              MSG_TYPE="log"
+            
+            # --- TASK 2: UPDATE METRICS ---
+            else
+              FILE=".sync/metrics/system.json"
+              echo "{ \"timestamp\": \"$(date +%s)\", \"status\": \"ok\", \"load\": $RANDOM }" > $FILE
+              git add $FILE
+              MSG_TYPE="feat"
+            fi
+
+            # --- GENERATE COMMIT MESSAGE ---
+            MESSAGES=(
+              "fix(core): optimize sync interval"
+              "docs: update daily tracking logs"
+              "chore: rotation of maintenance keys"
+              "refactor: improve data structure"
+              "perf: reduce memory footprint"
+              "style: formatting updates"
+              "test: update validation mocks"
+              "ci: adjust workflow timing"
+            )
+            
+            # Pick a message
+            MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+            
+            # Commit
+            git commit -m "$MSG"
+            
+            # Sleep 5-15 seconds between commits (Humans type, they don't instant-commit)
+            sleep $(( ( RANDOM % 10 ) + 5 ))
+            
+          done
+
+      - name: Push Changes
+        if: steps.decision.outputs.skip == 'false'
+        run: git push
+
+      - name: Weekly Housekeeping
+        if: steps.decision.outputs.skip == 'false'
+        run: |
+          # Only run cleanup on Sundays to minimize noise
+          if [ $(date +%u) -eq 7 ]; then
+             find .sync/logs -name "*.log" -type f -mtime +14 -delete
+             git add .sync/logs
+             git diff --staged --quiet || (git commit -m "chore: prune old logs" && git push)
           fi
