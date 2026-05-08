@@ -179,9 +179,24 @@ Hardware:   RTX 2050 (Locked to 8k Context)
 **What's Next:** Exploring adding a custom Python-based tool to this config, or is the current "Frugal" chat setup exactly what you need for now?
 
 
-Example:
+**Example:**
 
 <img width="842" height="447" alt="image" src="https://github.com/user-attachments/assets/6b850f2b-626f-4f27-9e54-15f675c6319f" />
+
+
+
+
+```
+import webbrowser
+import sys
+
+# Get the search query from WhatsApp input
+song = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "lofi hip hop"
+url = f"https://www.youtube.com/results?search_query={song}"
+
+print(f"Opening YouTube for: {song}")
+webbrowser.open(url)
+```
 
 
 ```
