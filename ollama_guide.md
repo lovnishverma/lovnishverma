@@ -272,16 +272,77 @@ Open WebUI gives you a ChatGPT-style interface in your browser for all your loca
 
 **Run Open WebUI:**
 
-```powershell
-docker run -d -p 3000:8080 `
-  --add-host=host.docker.internal:host-gateway `
-  -v open-webui:/app/backend/data `
-  --name open-webui `
-  --restart always `
-  ghcr.io/open-webui/open-webui:main
+**CMD Command**
+
+```cmd id="q7k2wr"
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-Open in browser: http://localhost:3000
+---
+
+**Or Use PowerShell Properly**
+
+Open PowerShell and run:
+
+```powershell id="v1m8zc"
+docker run -d -p 3000:8080 `
+--add-host=host.docker.internal:host-gateway `
+-v open-webui:/app/backend/data `
+--name open-webui `
+--restart always `
+ghcr.io/open-webui/open-webui:main
+```
+
+---
+
+**Then Open Browser**
+
+Go to:
+
+```text id="r5m2wy"
+http://localhost:3000
+```
+
+You should see:
+
+```text id="t8v4xp"
+Open WebUI setup page
+```
+
+---
+
+**If Docker Is Not Running**
+
+Start:
+
+```text id="y1k7zr"
+Docker Desktop
+```
+
+Wait until:
+
+```text id="f2x8wr"
+Docker Engine running
+```
+
+Then retry command.
+
+---
+
+# Verify Container
+
+```cmd id="u5m1zp"
+docker ps
+```
+
+You should see:
+
+```text id="w8q4xn"
+open-webui
+```
+
+running.
+
 
 **What you get:**
 - Multi-model switching
