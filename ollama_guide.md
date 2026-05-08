@@ -18,7 +18,7 @@ Ollama is a runtime that lets you download and run Large Language Models (LLMs) 
 | Speed | Depends on GPU | Generally faster |
 | Model choice | Limited by VRAM | Unlimited |
 
-Ollama exposes an OpenAI-compatible API on `http://localhost:11434`, so any tool that supports OpenAI can use it locally.
+Ollama exposes an OpenAI-compatible API on `http://localhost:11434`, so any tool that supports OpenAI can point to it locally.
 
 ---
 
@@ -33,13 +33,51 @@ Ollama exposes an OpenAI-compatible API on `http://localhost:11434`, so any tool
 | Storage | 10 GB free | 50 GB+ SSD |
 | Drivers | CUDA 11.x | CUDA 12.x (latest) |
 
-> **RTX 2050/3050 note:** 7B parameter models work well. 14B models will be slow and may partially run on CPU. Avoid 32B+ entirely.
+> **RTX 2050/3050 note:** 7B parameter models work well. 14B models will be slow and may partially offload to CPU. Avoid 32B+ entirely.
+
+---
+
+## Realistic Expectations for RTX 2050 (4 GB VRAM)
+
+Knowing what works and what doesn't saves a lot of frustration.
+
+**Works well:**
+- Coding assistance and autocomplete
+- Small and medium models (≤ 7B)
+- Offline chat and Q&A
+- Lightweight reasoning tasks
+
+**Struggles or fails:**
+- 14B+ models (slow, partial CPU offload)
+- Autonomous multi-step agents
+- Large context windows (> 8K tokens)
+- Multiple models loaded simultaneously
+- Heavy multimodal (vision) tasks
+
+---
+
+## Understanding Quantization
+
+When you pull a model from Ollama, it's almost always a quantized version — a compressed form of the original weights that uses less VRAM with minimal quality loss.
+
+| Format | Quality | VRAM Usage | Best for |
+|---|---|---|---|
+| `q4_K_M` | Good | Low | Laptop GPUs (RTX 2050/3050) |
+| `q5_K_M` | Better | Medium | 6–8 GB VRAM |
+| `q8_0` | High | High | 8–12 GB VRAM |
+| `fp16` | Full | Very high | Workstation GPUs only |
+
+Ollama defaults to `q4_K_M` for most models, which is the right choice for 4 GB VRAM. You can specify a quantization explicitly:
+
+```powershell
+ollama pull llama3:8b-instruct-q5_K_M
+```
 
 ---
 
 ## Step 1 — Install Ollama
 
-**Option A — GUI Installer (recommended for beginners)**
+**Option A — GUI Installer (recommended)**
 
 Download from: https://ollama.com/download  
 Run the `.exe` and follow the wizard. Ollama installs as a background Windows service.
@@ -54,7 +92,7 @@ irm https://ollama.com/install.ps1 | iex
 
 ```powershell
 ollama --version
-# Expected output: ollama version is 0.x.x
+# Expected: ollama version is 0.x.x
 ```
 
 ---
@@ -67,7 +105,7 @@ Outdated drivers are the #1 cause of GPU detection failures.
 nvidia-smi
 ```
 
-If this command fails or shows an old driver, update at:  
+If this command fails or shows a driver older than 525.x, update at:  
 https://www.nvidia.com/download/index.aspx
 
 **During install, choose:**
@@ -82,14 +120,14 @@ Reboot after installing.
 
 ```powershell
 nvidia-smi
-# Should show: driver version, CUDA version, and GPU memory usage
+# Should show: driver version, CUDA version, GPU memory
 ```
 
 ---
 
 ## Step 3 — Install Models
 
-Models are large files (4–8 GB each). Pull only what you need.
+Models are large files (2–8 GB each). Pull only what you need.
 
 ```powershell
 # Best for coding tasks
@@ -101,14 +139,8 @@ ollama pull phi3
 # Strong general-purpose chat
 ollama pull llama3:8b
 
-# Reasoning / logic tasks
+# Reasoning and logic tasks
 ollama pull deepseek-r1:8b
-```
-
-**Check installed models:**
-
-```powershell
-ollama list
 ```
 
 **Model recommendations by use case:**
@@ -121,10 +153,27 @@ ollama list
 | Reasoning / math | `deepseek-r1:8b` | ~5 GB |
 
 **Models to avoid on 4 GB VRAM:**
-
-- `70b` or `32b` parameter models (any family)
-- `deepseek-r1` (full version, not the `:8b` variant)
+- Any `70b` or `32b` model
+- `deepseek-r1` full version (use `:8b` instead)
 - `mixtral:8x22b`
+
+**Check what's installed:**
+
+```powershell
+ollama list
+```
+
+---
+
+## Ollama Model Storage Location
+
+Models are stored here on Windows:
+
+```
+C:\Users\<YOUR_USERNAME>\.ollama\models
+```
+
+If you're running low on disk space, you can inspect folder sizes here and delete unused models with `ollama rm`.
 
 ---
 
@@ -175,53 +224,54 @@ ollama cp llama3:8b llama3-backup
 
 ## Step 6 — Stop Ollama
 
-Ollama runs a background server process. Kill it when not in use to free VRAM and RAM.
+Ollama runs a background server process. Killing it frees VRAM, RAM, and reduces battery drain.
 
-**To Fully Stop Ollama**
+**Stop both Ollama processes:**
 
-Run:
-
-```powershell id="m4x8qp"
+```powershell
 taskkill /F /IM "ollama.exe"
-```
-
-Then:
-
-```powershell id="q7k2wr"
 taskkill /F /IM "ollama app.exe"
 ```
 
----
+**Verify it stopped:**
 
-**Verify It Stopped**
-
-Run:
-
-```powershell id="v1m8zc"
+```powershell
 tasklist | findstr ollama
+# No output = fully stopped
 ```
 
-If nothing appears:
-→ Ollama is completely stopped.
+> **Important — Windows auto-restart behavior:**  
+> Running `ollama list`, opening Continue.dev in VS Code, or loading Open WebUI in the browser will automatically restart the Ollama server in the background. This is by design, but it means a simple `taskkill` isn't truly "permanent" — tools that depend on Ollama will wake it back up the moment you use them.
 
----
+**Start Ollama again manually:**
 
-# Start Again Later
-
-Simply run:
-
-```powershell id="r5m2wy"
+```powershell
+ollama serve
+# or just run any model:
 ollama run qwen2.5-coder:7b
 ```
 
-and everything starts automatically again.
+---
 
+## Step 7 — Monitoring GPU Usage
+
+While a model is running, open a second PowerShell window:
+
+```powershell
+# One-time snapshot
+nvidia-smi
+
+# Live refresh every 2 seconds
+nvidia-smi -l 2
+```
+
+Look for `ollama.exe` in the process list and watch the VRAM column. If VRAM usage is near 0 MB, the model is running on CPU — much slower. This usually means your GPU driver needs updating.
 
 ---
 
-## Step 7 — VS Code Integration (Continue.dev)
+## Step 8 — VS Code Integration (Continue.dev)
 
-This gives you a Cursor-like AI coding experience for free.
+This gives you a Cursor-like AI coding experience — inline edits, chat, and autocomplete — completely free and offline.
 
 **Install Continue extension:**
 
@@ -254,152 +304,99 @@ Replace the contents with:
 
 Save the file.
 
+> **Note:** Newer versions of Continue may use a graphical model setup wizard instead of manual JSON editing. If you see a GUI on first launch, use it to add an Ollama provider and select `qwen2.5-coder:7b`.
+
 **Key shortcuts:**
 
 | Action | Shortcut |
 |---|---|
-| Open AI chat | `Ctrl + L` |
+| Open AI chat sidebar | `Ctrl + L` |
 | Inline code edit | `Ctrl + I` |
-| Accept suggestion | `Tab` |
+| Accept autocomplete | `Tab` |
 
 ---
 
-## Step 8 — Open WebUI (Browser Interface)
+## Step 9 — Open WebUI (Browser Interface)
 
-Open WebUI gives you a ChatGPT-style interface in your browser for all your local models.
+Open WebUI gives you a ChatGPT-style interface for all your local models.
 
-**Prerequisites:** Install Docker Desktop → https://www.docker.com/products/docker-desktop
+**Prerequisites:** Install Docker Desktop → https://www.docker.com/products/docker-desktop  
+Make sure Docker Engine is running (green icon in the system tray) before proceeding.
 
-**Run Open WebUI:**
+**Run Open WebUI (CMD):**
 
-**CMD Command**
-
-```cmd id="q7k2wr"
+```cmd
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
----
+**Run Open WebUI (PowerShell — multi-line for readability):**
 
-**Or Use PowerShell Properly**
-
-Open PowerShell and run:
-
-```powershell id="v1m8zc"
+```powershell
 docker run -d -p 3000:8080 `
---add-host=host.docker.internal:host-gateway `
--v open-webui:/app/backend/data `
---name open-webui `
---restart always `
-ghcr.io/open-webui/open-webui:main
+  --add-host=host.docker.internal:host-gateway `
+  -v open-webui:/app/backend/data `
+  --name open-webui `
+  --restart always `
+  ghcr.io/open-webui/open-webui:main
 ```
 
----
+**Verify the container started:**
 
-**Then Open Browser**
+```powershell
+docker ps
+# Should show "open-webui" with status "Up"
+```
 
-Go to:
+**Open in browser:**
 
-```text id="r5m2wy"
+```
 http://localhost:3000
 ```
 
-You should see:
-
-```text id="t8v4xp"
-Open WebUI setup page
-```
-
----
-
-**If Docker Is Not Running**
-
-Start:
-
-```text id="y1k7zr"
-Docker Desktop
-```
-
-Wait until:
-
-```text id="f2x8wr"
-Docker Engine running
-```
-
-Then retry command.
-
----
-
-# Verify Container
-
-```cmd id="u5m1zp"
-docker ps
-```
-
-You should see:
-
-```text id="w8q4xn"
-open-webui
-```
-
-running.
-
-
 **What you get:**
+- ChatGPT-style UI with local models
 - Multi-model switching
 - Chat history
-- File uploads to models
+- File uploads (PDF, text)
 - System prompt customization
-- Voice input (optional)
-
----
-
-## Monitoring GPU Usage
-
-While a model is running, open a second PowerShell window and run:
-
-```powershell
-# One-time snapshot
-nvidia-smi
-
-# Live refresh every 2 seconds
-nvidia-smi -l 2
-```
-
-Look for `ollama.exe` in the process list and watch VRAM usage. If VRAM usage is near 0, the model is running on CPU (slower).
+- Optional voice input
 
 ---
 
 ## Troubleshooting
 
-### GPU not detected
+### GPU not detected / CUDA error
 
 ```
 error: CUDA error: shared object initialization failed
 ```
 
-**Fix:** Update NVIDIA drivers → reboot → restart Ollama. If it persists, temporarily use CPU mode:
+Update NVIDIA drivers → reboot → restart Ollama. To temporarily bypass and use CPU:
 
 ```powershell
 $env:OLLAMA_NO_GPU="1"
 ollama run qwen2.5-coder:7b
 ```
 
-### Model requires more memory than available
+### Not enough memory
 
 ```
 error: model requires more system memory than available
 ```
 
-**Fix:** Close Chrome, Discord, games, and background apps. Switch to a smaller model (`phi3` instead of `llama3:8b`).
+Close Chrome, Discord, games, and overlays. Switch to a smaller model (`phi3` instead of `llama3:8b`).
 
 ### `nvidia-smi` command not found
 
-Your PATH is missing the NVIDIA System Management Interface. Fix: reinstall NVIDIA drivers with a clean install, or manually add `C:\Windows\System32\DriverStore\FileRepository\...` to PATH.
+Reinstall NVIDIA drivers using Clean Installation. If that doesn't fix it, add the NVIDIA tools folder to your system PATH manually:
+
+```
+C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_<version>\
+```
 
 ### Ollama server not responding
 
 ```powershell
-# Restart the server
 taskkill /F /IM ollama.exe
 ollama serve
 ```
@@ -411,63 +408,78 @@ ollama rm <model-name>
 ollama pull <model-name>
 ```
 
+### Docker container won't start
+
+Make sure Docker Desktop is running first, then retry the `docker run` command. If the container already exists from a previous attempt:
+
+```powershell
+docker rm open-webui
+# then re-run the docker run command
+```
+
 ---
 
 ## Performance Optimization
 
-**Before starting a session:**
-- Close Chrome tabs (each tab uses ~100–200 MB RAM)
+**Before a session:**
+- Close Chrome tabs (~100–200 MB RAM each)
 - Disable Discord video/streaming
-- Close MSI Center overlays and gaming software
-- Close other background applications
+- Close MSI Center, gaming overlays, and RGB software
+- Close unused background applications
 
 **During use:**
-- One model at a time — Ollama unloads models from VRAM after 5 minutes of inactivity
-- For coding, use `qwen2.5-coder` — it's faster and more accurate than general models on code tasks
-- For quick questions, `phi3` loads faster than 8B models
+- Load one model at a time — Ollama automatically unloads a model from VRAM after 5 minutes of inactivity
+- For coding tasks, `qwen2.5-coder` outperforms general models
+- For quick one-off questions, `phi3` loads in ~5 seconds vs ~15 for 8B models
 
-**After your session:**
+**After a session:**
 
 ```powershell
 taskkill /F /IM ollama.exe
+taskkill /F /IM "ollama app.exe"
 ```
-
-This immediately frees VRAM, RAM, and reduces battery drain.
 
 ---
 
 ## Quick Reference — All Commands
 
 ```powershell
-# Install a model
+# Pull (download) a model
 ollama pull MODEL_NAME
 
 # Run interactive chat
 ollama run MODEL_NAME
 
-# Run with a single prompt
+# Run a single prompt (non-interactive)
 echo "your prompt" | ollama run MODEL_NAME
 
 # List installed models
 ollama list
 
-# Remove a model
+# Remove a model (frees disk space)
 ollama rm MODEL_NAME
 
-# Start the server manually
+# Copy a model under a new name
+ollama cp MODEL_NAME NEW_NAME
+
+# Start the Ollama server manually
 ollama serve
 
 # Stop Ollama completely
 taskkill /F /IM ollama.exe
+taskkill /F /IM "ollama app.exe"
 
-# Check GPU and VRAM
+# Check GPU, VRAM, and driver info
 nvidia-smi
 
-# Live GPU monitor (refreshes every 2s)
+# Live GPU monitor (refreshes every 2 seconds)
 nvidia-smi -l 2
 
-# CPU-only mode (no GPU)
+# Run in CPU-only mode (no GPU)
 $env:OLLAMA_NO_GPU="1"; ollama run MODEL_NAME
+
+# Check Docker containers
+docker ps
 ```
 
 ---
@@ -475,15 +487,15 @@ $env:OLLAMA_NO_GPU="1"; ollama run MODEL_NAME
 ## Recommended Stack
 
 ```
-Ollama  ←  runtime and model manager
-  + qwen2.5-coder:7b  ←  primary coding model
-  + phi3              ←  fast lightweight assistant
+Ollama                 ←  runtime and model manager
+  + qwen2.5-coder:7b   ←  primary coding model
+  + phi3               ←  fast lightweight assistant
 
-VS Code + Continue.dev  ←  AI-powered editor (like Cursor, but free)
+VS Code + Continue.dev ←  AI-powered editor (Cursor alternative, free)
 Open WebUI             ←  browser chat interface
 ```
 
-This setup gives you a fully offline, GPU-accelerated AI assistant with zero recurring cost.
+This gives you a fully offline, GPU-accelerated AI development environment with zero recurring cost.
 
 ---
 
