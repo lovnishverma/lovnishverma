@@ -60,22 +60,139 @@ By default, OpenClaw may try to use large context windows. We must cap this to p
 
 ```json
 {
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/qwen2.5:3b"
+      },
+      "models": {
+        "ollama/qwen2.5:3b": {}
+      },
+      "workspace": "C:\\Users\\princ"
+    }
+  },
+  "auth": {
+    "profiles": {
+      "ollama:default": {
+        "mode": "api_key",
+        "provider": "ollama"
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "d47e91b0a9ec4170fd45e04b741185fda1e39c4e255ae023"
+    },
+    "bind": "loopback",
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "mode": "local",
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send",
+        "sms.search"
+      ]
+    },
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-05-09T01:46:00.000Z",
+    "lastTouchedVersion": "2026.5.7"
+  },
   "models": {
+    "mode": "merge",
     "providers": {
       "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
         "models": [
           {
             "id": "qwen2.5:3b",
-            "contextWindow": 8192,
+            "name": "qwen2.5:3b",
+            "contextWindow": 16384,
             "compat": {
-              "supportsTools": false, 
+              "supportsTools": true,
               "supportsUsageInStreaming": true
+            },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
             }
           }
         ]
       }
     }
-  }
+  },
+  "plugins": {
+    "entries": {
+      "ollama": {
+        "enabled": true
+      },
+      "whatsapp": {
+        "enabled": true
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": false,
+        "provider": "ollama"
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-05-08T17:36:52.827Z",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.5.7"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "selfChatMode": true,
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "918894869371"
+      ],
+      "accounts": {
+        "default": {
+          "name": "lovnish whatsapp"
+        }
+      }
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "whatsapp",
+        "accountId": "default"
+      }
+    }
+  ]
 }
 
 ```
