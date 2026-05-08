@@ -193,7 +193,7 @@ taskkill /F /IM "ollama app.exe"
 
 ---
 
-# Verify It Stopped
+**Verify It Stopped**
 
 Run:
 
