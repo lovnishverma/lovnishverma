@@ -1,5 +1,3 @@
----
-
 # OpenClaw + AI Agent Setup Guide (Windows)
 
 **Author:** Lovnish Verma | **Platform:** Windows 11 | **Reference Hardware:** MSI Cyborg 15 A12U (RTX 2050, 4GB VRAM)
