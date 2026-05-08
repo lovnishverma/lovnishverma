@@ -178,6 +178,16 @@ Hardware:   RTX 2050 (Locked to 8k Context)
 
 **What's Next:** Exploring adding a custom Python-based tool to this config, or is the current "Frugal" chat setup exactly what you need for now?
 
+
+Example:
+
+<img width="842" height="447" alt="image" src="https://github.com/user-attachments/assets/6b850f2b-626f-4f27-9e54-15f675c6319f" />
+
+
+```
+Execute shell: python "C:\Users\princ\scripts\play_song.py" "Sad English Songs"
+```
+
 ```
 *Last updated: May 2026*
 ```
