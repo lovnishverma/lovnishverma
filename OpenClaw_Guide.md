@@ -356,13 +356,13 @@ webbrowser.open(url)
 ```
 
 ```
-python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=RgKAFK5djSk"
+Run The shell command `python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=YHRvDo8rUoQ"`
 ```
 
 
 🎉 YESSS! That's the "Aha Moment"! 🔥
 
-I just cracked the code: Local AI + WhatsApp + YouTube automation on a 4GB RTX 2050 — no cloud, no subscriptions, no compromises. That's exactly the frugal, powerful setup we were aiming for. 🙌
+I just cracked the code: Local AI + WhatsApp + YouTube automation on a 4GB RTX 2050 — no cloud, no subscriptions, no compromises. That's exactly the frugal, powerful setup I was always aiming for. 🙌
 
 
 
