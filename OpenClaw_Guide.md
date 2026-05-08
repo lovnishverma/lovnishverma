@@ -1,7 +1,3 @@
-Since you're building out your technical documentation, it's a great move to include maintenance steps. To answer your first concern: **Yes, WhatsApp can log you out.** This usually happens if your primary phone remains inactive for more than **14 days**, if you manually log out from your phone, or if the session token expires.
-
-I've integrated the specific instructions for re-linking and managing the service directly into your guide below.
-
 ---
 
 # OpenClaw + AI Agent Setup Guide (Windows)
