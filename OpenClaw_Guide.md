@@ -1,6 +1,12 @@
+Since you're building out your technical documentation, it's a great move to include maintenance steps. To answer your first concern: **Yes, WhatsApp can log you out.** This usually happens if your primary phone remains inactive for more than **14 days**, if you manually log out from your phone, or if the session token expires.
+
+I've integrated the specific instructions for re-linking and managing the service directly into your guide below.
+
+---
+
 # OpenClaw + AI Agent Setup Guide (Windows)
 
-**Author:** Lovnish Verma | **Platform:** Windows 11 | **Reference Hardware:** MSI Cyborg 15 (RTX 2050, 4GB VRAM)
+**Author:** Lovnish Verma | **Platform:** Windows 11 | **Reference Hardware:** MSI Cyborg 15 A12U (RTX 2050, 4GB VRAM)
 
 ---
 
@@ -22,7 +28,7 @@ OpenClaw is an agentic framework that sits on top of Ollama. It transforms a "ch
 
 ## Realistic Expectations for RTX 2050 (4 GB VRAM)
 
-OpenClaw adds a small overhead for "thinking" (tool-calling logic). On a 4GB card, you must be frugal.
+OpenClaw adds a small overhead for "thinking" (tool-calling logic). On a **4GB** card, you must be frugal.
 
 **Works best:**
 
@@ -32,8 +38,8 @@ OpenClaw adds a small overhead for "thinking" (tool-calling logic). On a 4GB car
 
 **Struggles:**
 
-* **Tool-calling on < 7B models:** Small models (3B) often hallucinate tool names.
-* **Simultaneous Dashboards:** Keeping the Web UI and WhatsApp active concurrently can push VRAM to 3.9/4.0 GB.
+* **Tool-calling on < 7B models:** Small models (**3B**) often hallucinate tool names.
+* **Simultaneous Dashboards:** Keeping the Web UI and WhatsApp active concurrently can push VRAM to **3.9/4.0 GB**.
 
 ---
 
@@ -80,7 +86,7 @@ By default, OpenClaw may try to use large context windows. We must cap this to p
 
 ```
 
-> **Pro Tip:** Set `supportsTools: false` for 3B models to stop them from "hallucinating" and ensure they just answer your questions.
+> **Pro Tip:** Set `supportsTools: false` for **3B** models to stop them from "hallucinating" and ensure they just answer your questions.
 
 ---
 
@@ -110,59 +116,63 @@ openclaw gateway restart
 3. **Scan the QR Code:**
 A QR code will appear in your terminal. Scan it with WhatsApp (Linked Devices) to authorize your local agent.
 
----
+### 🔄 How to Re-link WhatsApp
 
-## Step 4 — Operational Commands
-
-OpenClaw runs as a service. Use these commands to manage your agent's "brain."
-
-| Command | Action |
-| --- | --- |
-| `openclaw status` | Check VRAM, token usage, and channel status. |
-| `openclaw gateway logs --follow` | Watch the agent "think" in real-time. |
-| `openclaw reset --scope sessions` | Clear "brain fog" if the agent gets confused. |
-| `/new` | (Inside any chat) Starts a fresh session with 0 tokens. |
-
----
-
-## Step 5 — Monitoring "The Wall" (Token Overload)
-
-On an RTX 2050, once you hit **100% Token Usage**, the agent will become extremely slow as it spills over into System RAM.
-
-**Monitor live:**
+If your session expires or you are logged out, you need to trigger a fresh login to see the QR code again:
 
 ```powershell
-openclaw status
+# Force a new login session for WhatsApp
+openclaw channels login --channel whatsapp
 
 ```
 
-Look at the **Sessions** table. If tokens show **8.2k/8.2k (100%)**, send the message `/new` from your phone or terminal to reset the memory.
+Scan the resulting QR code with your phone. Once the terminal says **"✅ Linked!"**, restart the gateway to resume operations.
 
 ---
 
-## Troubleshooting OpenClaw
+## Step 4 — Service Management
+
+OpenClaw usually runs as a background service. Use these commands to start, stop, or refresh the system.
+
+| Command | Action |
+| --- | --- |
+| `openclaw gateway start` | Launches the gateway and connects all channels (WhatsApp/Web). |
+| `openclaw gateway stop` | Shuts down the gateway and frees up your **RTX 2050** VRAM. |
+| `openclaw gateway restart` | Quickly stops and starts the gateway (required after editing `openclaw.json`). |
+| `openclaw status` | Check if the gateway is running and verify channel health. |
+
+---
+
+## Step 5 — Operational Commands
+
+Manage your agent's "brain" and monitor its performance.
+
+| Command | Action |
+| --- | --- |
+| `openclaw gateway logs --follow` | Watch the agent "think" and view inbound WhatsApp logs. |
+| `openclaw reset --scope sessions` | Clear "brain fog" if the agent gets confused. |
+| `/new` | (Inside any chat) Starts a fresh session with **0 tokens**. |
+
+---
+
+## Troubleshooting
 
 ### Agent is "Silent" on WhatsApp
 
 * **Check Status:** `openclaw status` should show WhatsApp as `OK`.
-* **Session Full:** If tokens are at 100%, run `openclaw reset --scope sessions`.
-* **Service Stuck:** Run `taskkill /F /IM openclaw.exe` and then `openclaw gateway start`.
-
-### Agent Hallucinates Tools (Error logs in chat)
-
-* Smaller models (3B) sometimes try to "search the web" or "write files" when they shouldn't.
-* **Fix:** In `openclaw.json`, set `"supportsTools": false` and `"web": { "search": { "enabled": false } }`.
+* **Session Full:** If tokens show **100%**, run `openclaw reset --scope sessions`.
+* **Token Overload:** If your session hits **8.2k/8.2k**, send `/new` in the WhatsApp chat.
 
 ### GPU Utilization shows 0%
 
-* Task Manager defaults to "3D" view.
-* **Fix:** Change the graph in Task Manager to **Cuda** or **Compute_0** to see the 3B model active.
+* Task Manager defaults to "3D" view which often misses AI compute.
+* **Fix:** Change the graph in Task Manager to **Cuda** or **Compute_0** to see the **3B** model active.
 
 ---
 
 ## Recommended "Frugal" Stack
 
-```
+```text
 Engine:     Ollama (qwen2.5:3b)
 Agent:      OpenClaw (v2026.5.7)
 Bridge:     WhatsApp (Self-Chat Mode)
@@ -172,6 +182,8 @@ Hardware:   RTX 2050 (Locked to 8k Context)
 
 ---
 
-What's Next: Exploring adding a custom Python-based tool to this config, or is the current "Frugal" chat setup exactly what you need for now?
+**What's Next:** Exploring adding a custom Python-based tool to this config, or is the current "Frugal" chat setup exactly what you need for now?
 
+```
 *Last updated: May 2026*
+```
