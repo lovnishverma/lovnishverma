@@ -372,5 +372,7 @@ I just cracked the code: Local AI + WhatsApp + YouTube automation on a 4GB RTX 2
 
 
 ```
+"Everyone talks about running LLMs locally. Almost no one shows you how to make them *useful* on 4GB VRAM." - Lovnish Verma
+
 *Last updated: May 2026*
 ```
