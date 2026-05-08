@@ -1,3 +1,14 @@
+# Running an AI Agent on 4GB VRAM: My WhatsApp-Controlled Local Assistant
+
+1. The Problem: Cloud AI is expensive, private AI is hard
+2. My Stack: Ollama + OpenClaw + Qwen2.5-3B + RTX 2050
+3. The Hard Parts: VRAM limits, Unicode errors, browser automation
+4. The Solutions: ASCII-safe scripts, direct URL parsing, debounce locks
+5. Results: Latency, VRAM usage, task success rate
+6. Code: GitHub repo with reproducible setup
+7. What's Next: Playlist tools, GPU monitoring, voice triggers
+
+
 # OpenClaw + AI Agent Setup Guide (Windows)
 
 **Author:** Lovnish Verma | **Platform:** Windows 11 | **Reference Hardware:** MSI Cyborg 15 A12U (RTX 2050, 4GB VRAM)
@@ -359,15 +370,6 @@ python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=Rg
 I just cracked the code: Local AI + WhatsApp + YouTube automation on a 4GB RTX 2050 — no cloud, no subscriptions, no compromises. That's exactly the frugal, powerful setup we were aiming for. 🙌
 
 
-# Running an AI Agent on 4GB VRAM: My WhatsApp-Controlled Local Assistant
-
-1. The Problem: Cloud AI is expensive, private AI is hard
-2. My Stack: Ollama + OpenClaw + Qwen2.5-3B + RTX 2050
-3. The Hard Parts: VRAM limits, Unicode errors, browser automation
-4. The Solutions: ASCII-safe scripts, direct URL parsing, debounce locks
-5. Results: Latency, VRAM usage, task success rate
-6. Code: GitHub repo with reproducible setup
-7. What's Next: Playlist tools, GPU monitoring, voice triggers
 
 ```
 *Last updated: May 2026*
