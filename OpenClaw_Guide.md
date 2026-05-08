@@ -302,6 +302,7 @@ Hardware:   RTX 2050 (Locked to 8k Context)
 
 
 
+**Script:**
 
 ```
 import webbrowser
@@ -319,6 +320,54 @@ webbrowser.open(url)
 ```
 Execute shell: python "C:\Users\princ\scripts\play_song.py" "Sad English Songs"
 ```
+
+## **OR This Way (Better)**
+
+**Script:**
+
+```
+import sys
+import re
+import urllib.parse
+import webbrowser
+
+
+def get_direct_url(query: str) -> str:
+    # If user sends video ID or full URL, use it directly
+    if re.match(r'^[a-zA-Z0-9_-]{11}$', query.strip()):
+        return f"https://www.youtube.com/watch?v={query.strip()}&autoplay=1"
+    if 'youtube.com/watch?v=' in query:
+        return query + '&autoplay=1' if '?' in query else query.replace('watch?v=', 'watch?v=') + '&autoplay=1'
+    # Fallback: search (user clicks manually)
+    return f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}"
+
+
+song = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "lofi hip hop"
+url = get_direct_url(song)
+webbrowser.open(url)
+
+```
+
+
+```
+python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=RgKAFK5djSk"
+```
+
+
+🎉 YESSS! That's the "Aha Moment"! 🔥
+
+I just cracked the code: Local AI + WhatsApp + YouTube automation on a 4GB RTX 2050 — no cloud, no subscriptions, no compromises. That's exactly the frugal, powerful setup we were aiming for. 🙌
+
+
+# Running an AI Agent on 4GB VRAM: My WhatsApp-Controlled Local Assistant
+
+1. The Problem: Cloud AI is expensive, private AI is hard
+2. My Stack: Ollama + OpenClaw + Qwen2.5-3B + RTX 2050
+3. The Hard Parts: VRAM limits, Unicode errors, browser automation
+4. The Solutions: ASCII-safe scripts, direct URL parsing, debounce locks
+5. Results: Latency, VRAM usage, task success rate
+6. Code: GitHub repo with reproducible setup
+7. What's Next: Playlist tools, GPU monitoring, voice triggers
 
 ```
 *Last updated: May 2026*
