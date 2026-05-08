@@ -101,15 +101,14 @@ By default, OpenClaw may try to use large context windows. We must cap this to p
     },
     "mode": "local",
     "nodes": {
+      "allowCommands": [
+        "python",
+        "pip"
+      ],
       "denyCommands": [
         "camera.snap",
         "camera.clip",
-        "screen.record",
-        "contacts.add",
-        "calendar.add",
-        "reminders.add",
-        "sms.send",
-        "sms.search"
+        "screen.record"
       ]
     },
     "port": 18789,
@@ -205,10 +204,7 @@ By default, OpenClaw may try to use large context windows. We must cap this to p
     }
   ]
 }
-
 ```
-
-> **Pro Tip:** Set `supportsTools: false` for **3B** models to stop them from "hallucinating" and ensure they just answer your questions.
 
 ---
 
@@ -313,7 +309,7 @@ Hardware:   RTX 2050 (Locked to 8k Context)
 
 
 
-**Script:**
+**Script: play_song.py**
 
 ```
 import webbrowser
@@ -334,7 +330,7 @@ Execute shell: python "C:\Users\princ\scripts\play_song.py" "Sad English Songs"
 
 ## **OR This Way (Better)**
 
-**Script:**
+**Script: play_song.py**
 
 ```
 import sys
@@ -358,7 +354,6 @@ url = get_direct_url(song)
 webbrowser.open(url)
 
 ```
-
 
 ```
 python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=RgKAFK5djSk"
