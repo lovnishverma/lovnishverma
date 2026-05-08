@@ -177,13 +177,45 @@ ollama cp llama3:8b llama3-backup
 
 Ollama runs a background server process. Kill it when not in use to free VRAM and RAM.
 
-```powershell
-# Force-stop Ollama
-taskkill /F /IM ollama.exe
+**To Fully Stop Ollama**
 
-# Confirm it's stopped (no output = good)
+Run:
+
+```powershell id="m4x8qp"
+taskkill /F /IM "ollama.exe"
+```
+
+Then:
+
+```powershell id="q7k2wr"
+taskkill /F /IM "ollama app.exe"
+```
+
+---
+
+# Verify It Stopped
+
+Run:
+
+```powershell id="v1m8zc"
 tasklist | findstr ollama
 ```
+
+If nothing appears:
+→ Ollama is completely stopped.
+
+---
+
+# Start Again Later
+
+Simply run:
+
+```powershell id="r5m2wy"
+ollama run qwen2.5-coder:7b
+```
+
+and everything starts automatically again.
+
 
 ---
 
