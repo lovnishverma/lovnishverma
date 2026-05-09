@@ -1,538 +1,136 @@
-# Running an AI Agent on 4GB VRAM: My WhatsApp-Controlled Local Assistant
+# OpenClaw: The Complete Guide
 
-1. The Problem: Cloud AI is expensive, private AI is hard
-2. My Stack: Ollama + OpenClaw + Qwen2.5-3B + RTX 2050
-3. The Hard Parts: VRAM limits, Unicode errors, browser automation
-4. The Solutions: ASCII-safe scripts, direct URL parsing, debounce locks
-5. Results: Latency, VRAM usage, task success rate
-6. Code: GitHub repo with reproducible setup
-7. What's Next: Playlist tools, GPU monitoring, voice triggers
+*The open-source personal AI assistant and autonomous agent framework.*
 
+## 1. Introduction
 
-# OpenClaw + AI Agent Setup Guide (Windows)
+**OpenClaw** (formerly known as *Clawdbot*, *Moltbot*, and *Clawd*) is a wildly popular, free, and open-source autonomous AI agent created by Austrian developer Peter Steinberger.
 
-**Author:** Lovnish Verma | **Platform:** Windows 11 | **Reference Hardware:** MSI Cyborg 15 A12U (RTX 2050, 4GB VRAM)
+Unlike traditional "on-demand" AI chatbots that wait for a prompt, answer, and stop, OpenClaw operates as a long-running autonomous agent (a "claw"). It runs continuously in the background, checking task lists on a heartbeat, managing files, accessing the web, and communicating with you proactively through everyday messaging apps.
 
----
+### Core Philosophy
 
-## What is OpenClaw?
-
-OpenClaw is an agentic framework that sits on top of Ollama. It transforms a "chat bot" into an "assistant" by giving the LLM access to your local system, tools, and messaging channels.
-
-**Why use it with Ollama?**
-
-| Feature | Ollama Alone | OpenClaw + Ollama |
-| --- | --- | --- |
-| Interface | Terminal / Basic Web | WhatsApp, TUI, & Dashboard |
-| File Access | ❌ None | ✅ Read/Write local files |
-| System Access | ❌ None | ✅ Execute Shell/PowerShell |
-| Connectivity | ❌ Local only | ✅ Remote control via WhatsApp |
-| Memory | ❌ Per-session | ✅ Persistent Identity & Long-term memory |
+* **True Local Sovereignty:** OpenClaw runs on your own hardware (Mac, Windows, or Linux). Your context, personal preferences, and conversation history stay private.
+* **Ubiquitous Interface:** There is no new UI to learn. You interact with OpenClaw via WhatsApp, Telegram, Discord, Signal, Slack, or iMessage.
+* **Proactive & Persistent:** It runs 24/7 background tasks, cron jobs, and webhooks. It remembers past context and bridges unrelated conversations into actionable workflows.
 
 ---
 
-## Realistic Expectations for RTX 2050 (4 GB VRAM)
+## 2. Installation & Setup
 
-OpenClaw adds a small overhead for "thinking" (tool-calling logic). On a **4GB** card, you must be frugal.
+OpenClaw operates as a long-running Node.js service. You can run it entirely on your own machine or use a managed provider.
 
-**Works best:**
+### Option A: Local Self-Hosting (Recommended)
 
-* **Qwen2.5-3B:** The "sweet spot" for speed and logic.
-* **8K Context Window:** High enough for coding, low enough to avoid VRAM swapping.
-* **WhatsApp Bridge:** Instant replies for system monitoring.
+You will need Node.js and Git installed on your machine.
 
-**Struggles:**
-
-* **Tool-calling on < 7B models:** Small models (**3B**) often hallucinate tool names.
-* **Simultaneous Dashboards:** Keeping the Web UI and WhatsApp active concurrently can push VRAM to **3.9/4.0 GB**.
-
----
-
-## Step 1 — Installation
-
-OpenClaw is a Node.js-based application. Ensure **Node.js (v20+)** is installed.
-
-```powershell
-# Install OpenClaw globally
-npm install -g @openclaw/cli
-
-# Initialize your profile (this creates C:\Users\<User>\.openclaw)
-openclaw onboard
+1. **Install via CLI:**
+```bash
+npm install -g openclaw-cli
 
 ```
 
----
 
-## Step 2 — Optimization for 4GB VRAM
+2. **Initialize your environment:**
+```bash
+openclaw init
 
-By default, OpenClaw may try to use large context windows. We must cap this to prevent "slowness" on the RTX 2050.
-
-**Edit `C:\Users\<User>\.openclaw\openclaw.json`:**
-
-```json
-{
-  "agents": {
-    "defaults": {
-      "model": {
-        "primary": "ollama/qwen2.5:3b"
-      },
-      "models": {
-        "ollama/qwen2.5:3b": {}
-      },
-      "workspace": "C:\\Users\\princ"
-    }
-  },
-  "auth": {
-    "profiles": {
-      "ollama:default": {
-        "mode": "api_key",
-        "provider": "ollama"
-      }
-    }
-  },
-  "gateway": {
-    "auth": {
-      "mode": "token",
-      "token": "d47e91b0a9ec4170fd45e04b741185fda1e39c4e255ae023"
-    },
-    "bind": "loopback",
-    "controlUi": {
-      "allowInsecureAuth": true
-    },
-    "mode": "local",
-    "nodes": {
-      "allowCommands": [
-        "python",
-        "pip"
-      ],
-      "denyCommands": [
-        "camera.snap",
-        "camera.clip",
-        "screen.record"
-      ]
-    },
-    "port": 18789,
-    "tailscale": {
-      "mode": "off",
-      "resetOnExit": false
-    }
-  },
-  "meta": {
-    "lastTouchedAt": "2026-05-09T01:46:00.000Z",
-    "lastTouchedVersion": "2026.5.7"
-  },
-  "models": {
-    "mode": "merge",
-    "providers": {
-      "ollama": {
-        "api": "ollama",
-        "apiKey": "ollama-local",
-        "baseUrl": "http://127.0.0.1:11434",
-        "models": [
-          {
-            "id": "qwen2.5:3b",
-            "name": "qwen2.5:3b",
-            "contextWindow": 16384,
-            "compat": {
-              "supportsTools": true,
-              "supportsUsageInStreaming": true
-            },
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "cacheRead": 0,
-              "cacheWrite": 0,
-              "input": 0,
-              "output": 0
-            }
-          }
-        ]
-      }
-    }
-  },
-  "plugins": {
-    "entries": {
-      "ollama": {
-        "enabled": true
-      },
-      "whatsapp": {
-        "enabled": true
-      }
-    }
-  },
-  "session": {
-    "dmScope": "per-channel-peer"
-  },
-  "tools": {
-    "profile": "coding",
-    "web": {
-      "search": {
-        "enabled": false,
-        "provider": "ollama"
-      }
-    }
-  },
-  "wizard": {
-    "lastRunAt": "2026-05-08T17:36:52.827Z",
-    "lastRunCommand": "onboard",
-    "lastRunMode": "local",
-    "lastRunVersion": "2026.5.7"
-  },
-  "channels": {
-    "whatsapp": {
-      "enabled": true,
-      "selfChatMode": true,
-      "dmPolicy": "allowlist",
-      "allowFrom": [
-        "918894869371"
-      ],
-      "accounts": {
-        "default": {
-          "name": "lovnish whatsapp"
-        }
-      }
-    }
-  },
-  "bindings": [
-    {
-      "agentId": "main",
-      "match": {
-        "channel": "whatsapp",
-        "accountId": "default"
-      }
-    }
-  ]
-}
 ```
 
+
+3. **Start the background service:**
+
+```bash
+   openclaw start
+
+```
+
+### Option B: Managed Hosting (e.g., KiloClaw)
+
+If you want to avoid managing 24/7 uptime on your own hardware, services like Kilo.ai offer managed OpenClaw instances.
+
+1. Sign up at a provider like Kilo.ai.
+2. Name your agent and provision the instance.
+3. Provide an API token for your preferred chat channel (e.g., a Telegram bot token from BotFather).
+
 ---
 
-## Step 3 — WhatsApp Remote Control
+## 3. Configuration
 
-One of OpenClaw's strongest features is the WhatsApp bridge.
+OpenClaw is configured via a global `~/.openclaw/openclaw.json` file or `.env` variables in your workspace.
 
-1. **Whitelist your number** in `openclaw.json`:
+### Connecting AI Models
+
+OpenClaw is model-agnostic. You can connect it to commercial APIs (Claude, OpenAI, DeepSeek) or run it entirely locally using tools like Ollama.
+
+**Example: Connecting a local Ollama model (e.g., Qwen3-4B or QwQ-32B)**
+Add this to your `openclaw.json`:
+
 ```json
-"channels": {
-  "whatsapp": {
-    "enabled": true,
-    "allowFrom": ["91XXXXXXXXXX"]
+"providers": {
+  "ollama-local": {
+    "baseUrl": "http://localhost:11434/v1",
+    "api": "openai-completions",
+    "models": [{
+      "id": "QwQ-32B",
+      "name": "Local QwQ Model",
+      "contextWindow": 32768
+    }]
   }
 }
 
 ```
 
+*Tip: Test your model connection via the CLI by running `openclaw models test QwQ-32B`.*
 
-2. **Start the Gateway:**
-```powershell
-openclaw gateway restart
+### Connecting Chat Interfaces
 
-```
-
-
-3. **Scan the QR Code:**
-A QR code will appear in your terminal. Scan it with WhatsApp (Linked Devices) to authorize your local agent.
-
-### 🔄 How to Re-link WhatsApp
-
-If your session expires or you are logged out, you need to trigger a fresh login to see the QR code again:
-
-```powershell
-# Force a new login session for WhatsApp
-openclaw channels login --channel whatsapp
-
-```
-
-Scan the resulting QR code with your phone. Once the terminal says **"✅ Linked!"**, restart the gateway to resume operations.
+* **Discord / Slack:** Add your app bot tokens to the `.env` file.
+* **Telegram:** Generate a token via BotFather and add `TELEGRAM_BOT_TOKEN=your_token`.
+* **WhatsApp:** Install community bridge integrations (e.g., `wechat-publisher` or WhatsApp bridges).
 
 ---
 
-## Step 4 — Service Management
+## 4. AgentSkills & Capabilities
 
-OpenClaw usually runs as a background service. Use these commands to start, stop, or refresh the system.
+OpenClaw acts as an "agentic harness." Its true power comes from **AgentSkills**—directories containing a `SKILL.md` file with metadata and tool instructions. There are over 100+ preconfigured bundles in the community registry.
 
-| Command | Action |
-| --- | --- |
-| `openclaw gateway start` | Launches the gateway and connects all channels (WhatsApp/Web). |
-| `openclaw gateway stop` | Shuts down the gateway and frees up your **RTX 2050** VRAM. |
-| `openclaw gateway restart` | Quickly stops and starts the gateway (required after editing `openclaw.json`). |
-| `openclaw status` | Check if the gateway is running and verify channel health. |
+### Key Capabilities:
 
----
-
-## Step 5 — Operational Commands
-
-Manage your agent's "brain" and monitor its performance.
-
-| Command | Action |
-| --- | --- |
-| `openclaw gateway logs --follow` | Watch the agent "think" and view inbound WhatsApp logs. |
-| `openclaw reset --scope sessions` | Clear "brain fog" if the agent gets confused. |
-| `/new` | (Inside any chat) Starts a fresh session with **0 tokens**. |
+* **Full System Access:** In a secure sandbox (or full OS access, if granted), OpenClaw can read/write files, run shell commands, and execute scripts.
+* **Web & Browser Control:** OpenClaw can navigate websites, scrape data, and fill out forms on your behalf using built-in browser integration.
+* **API & Workflow Gluing:** Control smart home devices (Home Assistant, Philips Hue), pull health metrics (WHOOP), or manage media (Spotify, Sonos).
 
 ---
 
-## Troubleshooting
+## 5. Practical Workflows
 
-### Agent is "Silent" on WhatsApp
+Because you interact with OpenClaw through messaging apps, you converse with it as if it were a coworker at a terminal.
 
-* **Check Status:** `openclaw status` should show WhatsApp as `OK`.
-* **Session Full:** If tokens show **100%**, run `openclaw reset --scope sessions`.
-* **Token Overload:** If your session hits **8.2k/8.2k**, send `/new` in the WhatsApp chat.
+### 1. The Autonomous Developer
 
-### GPU Utilization shows 0%
+Connect OpenClaw to GitHub using a fine-grained Personal Access Token (PAT).
 
-* Task Manager defaults to "3D" view which often misses AI compute.
-* **Fix:** Change the graph in Task Manager to **Cuda** or **Compute_0** to see the **3B** model active.
+> **You (via Telegram):** "Read through my `PraisonAI` repository. Find the outstanding bug regarding memory leaks, write a fix, and open a Pull Request. Do not merge it; just notify me here when it's ready."
 
----
+### 2. Cross-Platform Task Syncing
 
-## Recommended "Frugal" Stack
+If you use multiple machines (e.g., Windows at work, Mac at home), you can sync your `~/.openclaw` directory via iCloud or OneDrive. OpenClaw's intelligent path-adapter plugins resolve path differences automatically.
 
-```text
-Engine:     Ollama (qwen2.5:3b)
-Agent:      OpenClaw (v2026.5.7)
-Bridge:     WhatsApp (Self-Chat Mode)
-Hardware:   RTX 2050 (Locked to 8k Context)
+> **You (on Mac):** `openclaw resume last`
+> *(OpenClaw immediately picks up the data-cleaning task you started on your Windows PC three hours prior.)*
 
-```
+### 3. Always-On Monitoring
+
+> **You (via Discord):** "Monitor the webhook for my app's production errors. If an alert comes in while I'm asleep, assess the stack trace. If it's a known timeout issue, restart the server. If it's new, write an incident report to my Obsidian vault."
 
 ---
 
-**What's Next:** Exploring adding a custom Python-based tool to this config, or is the current "Frugal" chat setup exactly what you need for now?
+## 6. Security and Enterprise Deployment
 
+While giving an AI full shell access is powerful, it carries risks.
 
-**Example:**
+* **The Golden Rule:** Never allow OpenClaw to merge code to your `main` branch or execute destructive commands without human-in-the-loop approval.
+* **Sandbox by Default:** Run OpenClaw in its restricted file-system sandbox before giving it global user access.
+* **Enterprise Use:** For corporate environments, NVIDIA offers **NemoClaw**, a hardened reference implementation of OpenClaw. It packages the agent with the NVIDIA OpenShell secure runtime and Nemotron local models, ensuring sensitive data (patient records, financials) never leaves the corporate perimeter.
 
-<img width="842" height="447" alt="image" src="https://github.com/user-attachments/assets/6b850f2b-626f-4f27-9e54-15f675c6319f" />
-
-
-
-**Script: play_song.py**
-
-```
-import webbrowser
-import sys
-
-# Get the search query from WhatsApp input
-song = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "lofi hip hop"
-url = f"https://www.youtube.com/results?search_query={song}"
-
-print(f"Opening YouTube for: {song}")
-webbrowser.open(url)
-```
-
-
-```
-Execute shell: python "C:\Users\princ\scripts\play_song.py" "Sad English Songs"
-```
-
-## **OR This Way (Better)**
-
-**Script: play_song.py**
-
-```
-import sys
-import re
-import urllib.parse
-import webbrowser
-
-
-def get_direct_url(query: str) -> str:
-    # If user sends video ID or full URL, use it directly
-    if re.match(r'^[a-zA-Z0-9_-]{11}$', query.strip()):
-        return f"https://www.youtube.com/watch?v={query.strip()}&autoplay=1"
-    if 'youtube.com/watch?v=' in query:
-        return query + '&autoplay=1' if '?' in query else query.replace('watch?v=', 'watch?v=') + '&autoplay=1'
-    # Fallback: search (user clicks manually)
-    return f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}"
-
-
-song = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "lofi hip hop"
-url = get_direct_url(song)
-webbrowser.open(url)
-
-```
-
-```
-Run The shell command `python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=YHRvDo8rUoQ"`
-```
-
-# Set Volume volume_50.py
-
-```
-from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
-from comtypes import CLSCTX_ALL
-from ctypes import POINTER, cast
-speakers = AudioUtilities.GetSpeakers()
-interface = speakers.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-volume = cast(interface, POINTER(IAudioEndpointVolume))
-volume.SetMasterVolumeLevelScalar(0.5, None)
-```
-
-```
-python "C:\Users\princ\scripts\volume_50.py"
-```
-
-# Set Volume volume_max.py
-
-```
-from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
-from comtypes import CLSCTX_ALL
-from ctypes import POINTER, cast
-speakers = AudioUtilities.GetSpeakers()
-interface = speakers.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-volume = cast(interface, POINTER(IAudioEndpointVolume))
-volume.SetMasterVolumeLevelScalar(1.0, None)
-```
-
-```
-python "C:\Users\princ\scripts\volume_max.py"
-```
-
-# send_mail.py
-
-```
-import smtplib
-from email.mime.text import MIMEText
-import sys
-
-# Expected format: python send_mail.py "to@email.com" "Subject" "Message body"
-
-if len(sys.argv) < 4:
-    print("Usage: python send_mail.py <to_email> <subject> <body>")
-    sys.exit(1)
-
-to_email = sys.argv[1]
-subject = sys.argv[2]
-body = sys.argv[3]
-
-GMAIL_USER = "technicalboyprince@gmail.com"
-GMAIL_APP_PASSWORD = "xxxx xxxx xxxx xxxx"
-
-msg = MIMEText(body)
-msg['Subject'] = subject
-msg['From'] = GMAIL_USER
-msg['To'] = to_email
-
-try:
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-        server.login(GMAIL_USER, GMAIL_APP_PASSWORD)
-        server.send_message(msg)
-    print(f"Email sent successfully to {to_email}")
-except Exception as e:
-    print(f"Failed to send email: {e}")
-
-```
-
-```
-Execute this exact shell command locally as standard user. Do not use elevated mode. python C:\Users\princ\scripts\send_mail.py "princelv84@gmail.com" "Dashboard Ready" "The DTE Punjab dashboard is ready..."
-```
-
-<img width="747" height="307" alt="image" src="https://github.com/user-attachments/assets/d5af6507-a48a-460f-8ac1-44850afa1e75" />
-
-
-<img width="1547" height="366" alt="image" src="https://github.com/user-attachments/assets/836e4a6b-5965-4906-b321-8603c823b4d7" />
-
-
-# snap_screen.py
-
-```
-import pyautogui
-import sys
-import os
-from datetime import datetime
-
-
-def take_snap():
-    path = r"C:\Users\princ\Pictures\Screenshots"
-    filename = f"snap_{datetime.now().strftime('%H%M%S')}.png"
-    fullpath = os.path.join(path, filename)
-
-    pyautogui.screenshot(fullpath)
-    print(f"Screenshot saved: {fullpath}")
-
-
-if __name__ == "__main__":
-    take_snap()
-    sys.stdout.flush()
-    sys.exit(0)
-```
-
-```
-python "C:\Users\princ\scripts\snap_screen.py"
-```
-
-# take_photo.py
-
-```
-import cv2
-import os
-import sys
-import time
-from datetime import datetime
-
-
-def snap_photo():
-    # Folder to save the images
-    path = r"C:\Users\princ\Pictures\Camera_Snaps"
-
-    try:
-        if not os.path.exists(path):
-            os.makedirs(path)
-
-        filename = f"photo_{datetime.now().strftime('%H%M%S')}.jpg"
-        fullpath = os.path.join(path, filename)
-
-        # 0 is usually the default built-in webcam.
-        # CAP_DSHOW is required for Windows background scripts to load instantly.
-        cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-
-        if not cap.isOpened():
-            print("Error: Could not access the webcam. Is it in use by another app?")
-            return
-
-        # Warm-up time for sensor to adjust light/focus
-        time.sleep(1.5)
-
-        # Read the frame
-        ret, frame = cap.read()
-
-        if ret:
-            cv2.imwrite(fullpath, frame)
-            print(f"Photo snapped and saved: {fullpath}")
-        else:
-            print("Error: Camera opened but failed to capture the image.")
-
-    except Exception as e:
-        print(f"Camera Script Error: {e}")
-    finally:
-        # ALWAYS release the camera, otherwise the LED stays on and it's locked out
-        if 'cap' in locals() and cap.isOpened():
-            cap.release()
-
-
-if __name__ == "__main__":
-    snap_photo()
-    sys.stdout.flush()  # Push the log to OpenClaw
-    sys.exit(0)         # Kill the background thread instantly
-```
-
-```
-python "C:\Users\princ\scripts\take_photo.py"
-```
-
-
-
-🎉 YESSS! That's the "Aha Moment"! 🔥
-
-I just cracked the code: Local AI + WhatsApp + YouTube automation on a 4GB RTX 2050 — no cloud, no subscriptions, no compromises. That's exactly the frugal, powerful setup I was always aiming for. 🙌
-
-
-
-```
-"Everyone talks about running LLMs locally. Almost no one shows you how to make them *useful* on 4GB VRAM." - Lovnish Verma
-
-*Last updated: May 2026*
-```
