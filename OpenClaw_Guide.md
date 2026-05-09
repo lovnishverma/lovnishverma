@@ -359,6 +359,38 @@ webbrowser.open(url)
 Run The shell command `python "C:\Users\princ\scripts\play_song.py" "https://www.youtube.com/watch?v=YHRvDo8rUoQ"`
 ```
 
+# Set Volume volume_50.py
+
+```
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+from comtypes import CLSCTX_ALL
+from ctypes import POINTER, cast
+speakers = AudioUtilities.GetSpeakers()
+interface = speakers.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+volume = cast(interface, POINTER(IAudioEndpointVolume))
+volume.SetMasterVolumeLevelScalar(0.5, None)
+```
+
+```
+python "C:\Users\princ\scripts\volume_50.py"
+```
+
+# Set Volume volume_max.py
+
+```
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+from comtypes import CLSCTX_ALL
+from ctypes import POINTER, cast
+speakers = AudioUtilities.GetSpeakers()
+interface = speakers.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+volume = cast(interface, POINTER(IAudioEndpointVolume))
+volume.SetMasterVolumeLevelScalar(1.0, None)
+```
+
+```
+python "C:\Users\princ\scripts\volume_max.py"
+```
+
 
 🎉 YESSS! That's the "Aha Moment"! 🔥
 
