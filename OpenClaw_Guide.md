@@ -391,6 +391,139 @@ volume.SetMasterVolumeLevelScalar(1.0, None)
 python "C:\Users\princ\scripts\volume_max.py"
 ```
 
+# send_mail.py
+
+```
+import smtplib
+from email.mime.text import MIMEText
+import sys
+
+# Expected format: python send_mail.py "to@email.com" "Subject" "Message body"
+
+if len(sys.argv) < 4:
+    print("Usage: python send_mail.py <to_email> <subject> <body>")
+    sys.exit(1)
+
+to_email = sys.argv[1]
+subject = sys.argv[2]
+body = sys.argv[3]
+
+GMAIL_USER = "technicalboyprince@gmail.com"
+GMAIL_APP_PASSWORD = "xxxx xxxx xxxx xxxx"
+
+msg = MIMEText(body)
+msg['Subject'] = subject
+msg['From'] = GMAIL_USER
+msg['To'] = to_email
+
+try:
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+        server.login(GMAIL_USER, GMAIL_APP_PASSWORD)
+        server.send_message(msg)
+    print(f"Email sent successfully to {to_email}")
+except Exception as e:
+    print(f"Failed to send email: {e}")
+
+```
+
+```
+Execute this exact shell command locally as standard user. Do not use elevated mode. python C:\Users\princ\scripts\send_mail.py "princelv84@gmail.com" "Dashboard Ready" "The DTE Punjab dashboard is ready..."
+```
+
+<img width="747" height="307" alt="image" src="https://github.com/user-attachments/assets/d5af6507-a48a-460f-8ac1-44850afa1e75" />
+
+
+<img width="1547" height="366" alt="image" src="https://github.com/user-attachments/assets/836e4a6b-5965-4906-b321-8603c823b4d7" />
+
+
+# snap_screen.py
+
+```
+import pyautogui
+import sys
+import os
+from datetime import datetime
+
+
+def take_snap():
+    path = r"C:\Users\princ\Pictures\Screenshots"
+    filename = f"snap_{datetime.now().strftime('%H%M%S')}.png"
+    fullpath = os.path.join(path, filename)
+
+    pyautogui.screenshot(fullpath)
+    print(f"Screenshot saved: {fullpath}")
+
+
+if __name__ == "__main__":
+    take_snap()
+    sys.stdout.flush()
+    sys.exit(0)
+```
+
+```
+python "C:\Users\princ\scripts\snap_screen.py"
+```
+
+# take_photo.py
+
+```
+import cv2
+import os
+import sys
+import time
+from datetime import datetime
+
+
+def snap_photo():
+    # Folder to save the images
+    path = r"C:\Users\princ\Pictures\Camera_Snaps"
+
+    try:
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        filename = f"photo_{datetime.now().strftime('%H%M%S')}.jpg"
+        fullpath = os.path.join(path, filename)
+
+        # 0 is usually the default built-in webcam.
+        # CAP_DSHOW is required for Windows background scripts to load instantly.
+        cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+        if not cap.isOpened():
+            print("Error: Could not access the webcam. Is it in use by another app?")
+            return
+
+        # Warm-up time for sensor to adjust light/focus
+        time.sleep(1.5)
+
+        # Read the frame
+        ret, frame = cap.read()
+
+        if ret:
+            cv2.imwrite(fullpath, frame)
+            print(f"Photo snapped and saved: {fullpath}")
+        else:
+            print("Error: Camera opened but failed to capture the image.")
+
+    except Exception as e:
+        print(f"Camera Script Error: {e}")
+    finally:
+        # ALWAYS release the camera, otherwise the LED stays on and it's locked out
+        if 'cap' in locals() and cap.isOpened():
+            cap.release()
+
+
+if __name__ == "__main__":
+    snap_photo()
+    sys.stdout.flush()  # Push the log to OpenClaw
+    sys.exit(0)         # Kill the background thread instantly
+```
+
+```
+python "C:\Users\princ\scripts\take_photo.py"
+```
+
+
 
 🎉 YESSS! That's the "Aha Moment"! 🔥
 
