@@ -125,7 +125,7 @@ lovnish_verma = {
 <td width="50%">
 
 **🏛️ Research & Teaching**
-- Faculty: M.Tech AI & B.Tech AI/ML @ NIELIT Ropar
+- Faculty: AI/ML @ NIELIT Ropar
 - Deep Learning, Unsupervised Learning, NLP courses
 - Bloom's Taxonomy–compliant course design
 - Colab notebooks, practical files & lab content
