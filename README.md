@@ -566,7 +566,7 @@ lovnish_verma = {
 |-----------|---------|----------------|
 | 🇮🇳 **MeitY FutureSkills Prime — Big Data & Data Science** | Training Lead / Programme Coordinator | 800+ university students, 400+ government officials |
 | 🏫 **DTE Punjab Faculty Training — Big Data & DS** | Programme Coordinator | 79 faculty from 19+ Government Polytechnic Colleges |
-| 🤝 **NIELIT–IIT Ropar AIML Joint Certification** | Faculty / Mentor | M.Tech & B.Tech AI/ML cohorts |
+| 🤝 **NIELIT–IIT Ropar AIML Joint Certification** | Faculty / Mentor | Big Data AI/ML cohorts |
 | 💡 **IndiaAI Scheme — AI Capacity Building** | Faculty & Resource Person | Students & institutional participants |
 | 🏆 **Pradhan Mantri Kaushal Vikas Yojana** | Master Trainer | National Level Scheme |
 | ⚖️ **Smart India Hackathon 2025** | Evaluator | National Screening Round — Govt. of India & AICTE |
@@ -583,7 +583,7 @@ lovnish_verma = {
 - 🤖 Designed and implemented AI-powered systems for national e-Governance initiatives
 - 🔗 Built and deployed robust REST APIs to integrate ML models at institutional scale
 - 🔬 Collaborated with senior scientists to bridge theoretical AI and real-world applications
-- 📚 Faculty for M.Tech AI & B.Tech AI/ML (Deep Learning, Unsupervised Learning, Advanced Algorithms)
+- 📚 Faculty for AI/ML (Deep Learning, Unsupervised Learning, Advanced Algorithms)
 - 🚀 Led capacity-building under MeitY FutureSkills Prime — 800+ students, 400+ govt. officials
 
 ### 💻 Software Developer
