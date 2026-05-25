@@ -288,27 +288,39 @@ lovnish_verma = {
 <td>
 
 • Deep Learning course materials (M.Tech AI)
+
 • FutureSkills PRIME training analytics
+
 • LLM fine-tuning for institutional domains
+
 • IoT + AI smart lab systems
+
 • YouTube tech content (@lovnishverma)
 
 </td>
 <td>
 
 • Advanced RAG architectures
+
 • MLOps & model monitoring
+
 • Agentic AI workflows
+
 • Kubernetes orchestration
+
 • Multimodal AI systems
 
 </td>
 <td>
 
 • AI/ML research papers
+
 • e-Governance AI solutions
+
 • Open-source ML projects
+
 • Blockchain + AI fusion
+
 • Edge AI deployments
 
 </td>
