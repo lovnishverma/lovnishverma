@@ -551,11 +551,11 @@ lovnish_verma = {
 
 | # | Title | Publisher / Journal | Year | Role |
 |---|-------|---------------------|------|------|
-| 🆕 | **Explainable AI for Web and Text Mining** | International Journal of Digital Technologies (IJDT) | Jan 2026 | Lead Author |
-| 🆕 | **Pioneering Advances in AI, Machine Learning, and Big Data Analytics** | Book Chapter — Springer | 2026 | Lead Author |
 | 🆕 | **Design and Evaluation of a DID-Based Accountability Framework for Resource-Constrained IoT Devices** | Lecture Notes in Networks and Systems — Springer | Jan 2026 | Lead Author |
-| 📘 | **Blockchain-Based Certificate Verification System: A Decentralized Approach** | Lecture Notes in Networks and Systems — Springer | Jul 2024 | Lead Author |
-| 📗 | **IoT-Based Remote Control and Monitoring of Electrical Appliances** | International Journal of Digital Technologies (IJDT) | 2025 | Lead Author |
+| 📗 | **[Explainable AI for Web and Text Mining](https://journal.nielit.edu.in/index.php/01/article/view/135)** | International Journal of Digital Technologies (IJDT) | Jan 2026 | Lead Author |
+| 📘 | **[Pioneering Advances in AI, Machine Learning, and Big Data Analytics](https://link.springer.com/chapter/10.1007/978-981-96-9935-3_32)** | Book Chapter — Springer | 2026 | Lead Author |
+| 📘 | **[Blockchain-Based Certificate Verification System: A Decentralized Approach](https://link.springer.com/chapter/10.1007/978-981-97-3601-0_36)** | Lecture Notes in Networks and Systems — Springer | Jul 2024 | Lead Author |
+| 📗 | **[IoT-Based Remote Control and Monitoring of Electrical Appliances](https://journal.nielit.edu.in/index.php/01/article/view/107)** | International Journal of Digital Technologies (IJDT) | 2025 | Lead Author |
 
 📌 Full profile → [researchgate.net/profile/Lovnish-Verma](https://www.researchgate.net/profile/Lovnish-Verma) &nbsp;|&nbsp; ORCID → [0009-0009-3992-030X](https://orcid.org/0009-0009-3992-030X)
 
