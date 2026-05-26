@@ -178,14 +178,6 @@ lovnish_verma = {
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=lovnishverma&custom_title=Lovnish+Verma+Contribution+Activity&bg_color=0d1117&color=00d9ff&line=00d9ff&point=ff6b35&area=true&hide_border=true" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=lovnishverma&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15&title=Stars,Commits,Repositories,PullRequest" />
-
-![](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&hide_border=true)
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=lovnishverma&theme=tokyonight&hide_border=true)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true)
-
 </div>
 
 ---
