@@ -578,7 +578,7 @@ lovnish_verma = {
 | 🏫 **DTE Punjab Faculty Training — Big Data & DS** | Project Engineer | 79 faculty from 19+ Government Polytechnic Colleges |
 | 🤝 **NIELIT–IIT Ropar AIML Joint Certification** | Project Engineer / Mentor | Big Data AI/ML cohorts |
 | 💡 **IndiaAI Scheme — AI Capacity Building** | Project Engineer & Faculty | Students & institutional participants |
-| 🏆 **Pradhan Mantri Kaushal Vikas Yojana** | Master Trainer | National Level Scheme |
+| 🏆 **Pradhan Mantri Kaushal Vikas Yojana** | Master Trainer for AIML | National Level Scheme |
 | ⚖️ **Smart India Hackathon 2025** | Evaluator | National Screening Round — Govt. of India & AICTE |
 
 ---
