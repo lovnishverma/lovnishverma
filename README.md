@@ -125,7 +125,7 @@ lovnish_verma = {
 <td width="50%">
 
 **🏛️ Research & Teaching**
-- Faculty: AI/ML @ NIELIT Ropar
+- Project Engineer: AI/ML @ NIELIT Ropar
 - Deep Learning, Unsupervised Learning, NLP courses
 - Bloom's Taxonomy–compliant course design
 - Colab notebooks, practical files & lab content
@@ -576,10 +576,10 @@ lovnish_verma = {
 
 | Programme | My Role | Reach & Impact |
 |-----------|---------|----------------|
-| 🇮🇳 **MeitY FutureSkills Prime — Big Data & Data Science** | Training Lead / Programme Coordinator | 800+ university students, 400+ government officials |
-| 🏫 **DTE Punjab Faculty Training — Big Data & DS** | Programme Coordinator | 79 faculty from 19+ Government Polytechnic Colleges |
-| 🤝 **NIELIT–IIT Ropar AIML Joint Certification** | Faculty / Mentor | Big Data AI/ML cohorts |
-| 💡 **IndiaAI Scheme — AI Capacity Building** | Faculty & Resource Person | Students & institutional participants |
+| 🇮🇳 **MeitY FutureSkills Prime — Big Data & Data Science** | Training Lead / Project Engineer | 800+ university students, 400+ government officials |
+| 🏫 **DTE Punjab Faculty Training — Big Data & DS** | Project Engineer | 79 faculty from 19+ Government Polytechnic Colleges |
+| 🤝 **NIELIT–IIT Ropar AIML Joint Certification** | Project Engineer / Mentor | Big Data AI/ML cohorts |
+| 💡 **IndiaAI Scheme — AI Capacity Building** | Project Engineer & Faculty | Students & institutional participants |
 | 🏆 **Pradhan Mantri Kaushal Vikas Yojana** | Master Trainer | National Level Scheme |
 | ⚖️ **Smart India Hackathon 2025** | Evaluator | National Screening Round — Govt. of India & AICTE |
 
@@ -589,7 +589,7 @@ lovnish_verma = {
 
 <img align="right" alt="Work GIF" width="280" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif"/>
 
-### 🏛️ Project Engineer & Faculty Member
+### 🏛️ Project Engineer
 **NIELIT Ropar (Deemed to be University)** &nbsp;|&nbsp; *Dec 2024 – Present*
 
 - 🤖 Designed and implemented AI-powered systems for national e-Governance initiatives
