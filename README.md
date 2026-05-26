@@ -180,6 +180,12 @@ lovnish_verma = {
 
 <img src="https://github-profile-trophy.vercel.app/?username=lovnishverma&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15&title=Stars,Commits,Repositories,PullRequest" />
 
+![](https://github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=tokyonight&hide_border=true)
+
+![](https://github-readme-streak-stats.herokuapp.com/?user=lovnishverma&theme=tokyonight&hide_border=true)
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=tokyonight&hide_border=true)
+
 </div>
 
 ---
@@ -557,7 +563,7 @@ lovnish_verma = {
 | 📘 | **[Blockchain-Based Certificate Verification System: A Decentralized Approach](https://link.springer.com/chapter/10.1007/978-981-97-3601-0_36)** | Lecture Notes in Networks and Systems — Springer | Jul 2024 | Lead Author |
 | 📗 | **[IoT-Based Remote Control and Monitoring of Electrical Appliances](https://journal.nielit.edu.in/index.php/01/article/view/107)** | International Journal of Digital Technologies (IJDT) | 2025 | Lead Author |
 
-📌 Full profile → [researchgate.net/profile/Lovnish-Verma](https://www.researchgate.net/profile/Lovnish-Verma) &nbsp;|&nbsp; ORCID → [0009-0009-3992-030X](https://orcid.org/0009-0009-3992-030X)
+📌 Full profile → [researchgate.net/profile/Lovnish-Verma](https://www.researchgate.net/profile/Lovnish-Verma) &nbsp;|&nbsp; ORCID → [0009-0009-3992-030X](https://orcid.org/0009-0009-3992-030X)  Google Scholar → https://scholar.google.com/citations?user=shVaSG4AAAAJ&hl=en
 
 ---
 
