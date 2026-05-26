@@ -52,8 +52,8 @@
   <a href="https://www.nielit.ac.in">
     <img src="https://img.shields.io/badge/NIELIT-Deemed%20University-0057A8?style=for-the-badge&logo=gov.uk&logoColor=white" />
   </a>
-  <a href="https://www.researchgate.net/profile/Lovnish-Verma">
-    <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white" />
+  <a href="https://www.gate.net/profile/Lovnish-Verma">
+    <img src="https://img.shields.io/badge/Gate-00CCBB?style=for-the-badge&logo=gate&logoColor=white" />
   </a>
   <a href="mailto:princelv84@gmail.com">
     <img src="https://img.shields.io/badge/Email-princelv84@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -124,7 +124,7 @@ lovnish_verma = {
 <tr>
 <td width="50%">
 
-**🏛️ Research & Teaching**
+**🏛️ Research & Innovation**
 - Project Engineer: AI/ML @ NIELIT Ropar
 - Deep Learning, Unsupervised Learning, NLP courses
 - Bloom's Taxonomy–compliant course design
@@ -549,7 +549,7 @@ lovnish_verma = {
 
 | # | Title | Publisher / Journal | Year | Role |
 |---|-------|---------------------|------|------|
-| 🆕 | **Design and Evaluation of a DID-Based Accountability Framework for Resource-Constrained IoT Devices** | Lecture Notes in Networks and Systems — Springer | Jan 2026 | Lead Author |
+| 🆕 | **Design and Evaluation of a DID-Based Accountability Framework for Resource-Constrained IoT Devices** | Lecture Notes in Networks and Systems — Springer | Accepted paper | Lead Author |
 | 📗 | **[Explainable AI for Web and Text Mining](https://journal.nielit.edu.in/index.php/01/article/view/135)** | International Journal of Digital Technologies (IJDT) | Jan 2026 | Lead Author |
 | 📘 | **[Pioneering Advances in AI, Machine Learning, and Big Data Analytics](https://link.springer.com/chapter/10.1007/978-981-96-9935-3_32)** | Book Chapter — Springer | 2026 | Lead Author |
 | 📘 | **[Blockchain-Based Certificate Verification System: A Decentralized Approach](https://link.springer.com/chapter/10.1007/978-981-97-3601-0_36)** | Lecture Notes in Networks and Systems — Springer | Jul 2024 | Lead Author |
