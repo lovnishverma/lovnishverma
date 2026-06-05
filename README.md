@@ -443,11 +443,11 @@ class LovnishVerma:
 
 | # | Research Title | Venue | Year | Status |
 |---|----------------|-------|------|--------|
-| 1 | **Design and Evaluation of a DID-Based Accountability Framework for Resource-Constrained IoT Devices** | Springer LNNS | 2025 | Accepted |
-| 2 | **[Explainable AI for Web and Text Mining](https://journal.nielit.edu.in/index.php/01/article/view/135)** | IJDT | Jan 2026 | Published |
-| 3 | **[Pioneering Advances in AI, Machine Learning, and Big Data Analytics](https://link.springer.com/chapter/10.1007/978-981-96-9935-3_32)** | Springer Book Chapter | 2026 | Published |
+| 1 | **Design and Evaluation of a DID-Based Accountability Framework for Resource-Constrained IoT Devices** | Springer LNNS | 2026 | Accepted |
+| 2 | **[Explainable AI for Web and Text Mining](https://journal.nielit.edu.in/index.php/01/article/view/135)** | IJDT | Jan 2025 | Published |
+| 3 | **[Pioneering Advances in AI, Machine Learning, and Big Data Analytics](https://link.springer.com/chapter/10.1007/978-981-96-9935-3_32)** | Springer Book Chapter | 2025 | Published |
 | 4 | **[Blockchain-Based Certificate Verification System: A Decentralized Approach](https://link.springer.com/chapter/10.1007/978-981-97-3601-0_36)** | Springer LNNS | Jul 2024 | Published |
-| 5 | **[IoT-Based Remote Control and Monitoring of Electrical Appliances](https://journal.nielit.edu.in/index.php/01/article/view/107)** | IJDT | 2025 | Published |
+| 5 | **[IoT-Based Remote Control and Monitoring of Electrical Appliances](https://journal.nielit.edu.in/index.php/01/article/view/107)** | IJDT | 2024 | Published |
 
 **Research Profiles**: [ORCID](https://orcid.org/0009-0009-3992-030X) | [ResearchGate](https://www.researchgate.net/profile/Lovnish-Verma) | [Google Scholar](https://scholar.google.com/citations?user=shVaSG4AAAAJ&hl=en)
 
@@ -463,7 +463,7 @@ class LovnishVerma:
 | **Govt. Officials Trained** | 400+ | e-Governance capacity building under Digital India |
 | **Live AI Systems** | 12+ | Production deployments on Hugging Face, Streamlit, PythonAnywhere |
 | **Research Papers** | 5 | Peer-reviewed publications (Springer + IJDT) |
-| **GitHub Projects** | 50+ | Open-source AI/ML tools and applications |
+| **GitHub Projects** | 150+ | Open-source AI/ML tools and applications |
 | **Hackathon Performance** | Top 3 / 1,552 | Paranox 2.0 National Hackathon — 2nd Runner Up |
 | **Institutions Served** | 19+ | Govt. Polytechnic Colleges under DTE Punjab |
 
