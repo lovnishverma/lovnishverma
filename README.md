@@ -330,15 +330,14 @@ class LovnishVerma:
 </td>
 <td width="50%" valign="top">
 
-### 📱 [SMS Guard — On-Device Fraud Detection](https://github.com/lovnishverma)
-**Flutter + XGBoost On-Device ML (ISEA Hackathon 2026 @ IIT Ropar)**
+### 🛍️ [JustBuying.in](https://github.com/lovnishverma/justbuying)
+**Modern WooCommerce Custom Themed E-Commerce Platform**
 
-`Flutter` `Dart` `XGBoost` `On-device ML` `Feature Engineering`
+`WordPress` `WooCommerce` `PHP` `MySQL` `Apache`
 
-- 16,000+ dimensional TF-IDF feature extraction from SMS text data
-- On-device XGBoost inference in Dart — zero server round-trip for privacy
-- Real-time fraud classification with confidence scoring and explainability
-- Built at ISEA National Hackathon, IIT Ropar with production-ready architecture
+- JustBuying is a complete WooCommerce-based e-commerce platform developed using WordPress with a fully customized storefront.
+- The project was built to provide a modern online shopping experience with optimized performance, secure payment workflows, mobile responsiveness, and scalable architecture suitable for production deployments.
+- This repository is maintained as a professional portfolio demonstrating full-stack WordPress and WooCommerce development.
 
 </td>
 </tr>
