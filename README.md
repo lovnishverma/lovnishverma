@@ -548,10 +548,10 @@ class LovnishVerma:
 <table>
 <tr>
 <td>
-<img height="190em" src="https://github-readme-stats-two-wine-48.vercel.app/api?username=lovnishverma&show_icons=true&theme=react&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35&card_width=420"/>
+<img height="190em" src="https://lovnish-github-readme-stats.vercel.app/api?username=lovnishverma&show_icons=true&theme=react&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35"/>
 </td>
 <td>
-<img height="190em" src="https://github-readme-stats-two-wine-48.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35&card_width=380&langs_count=8"/>
+<img height="190em" src="https://lovnish-github-readme-stats.vercel.app/api/top-langs/?username=lovnishverma&layout=compact&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35&langs_count=8"/>
 </td>
 </tr>
 </table>
