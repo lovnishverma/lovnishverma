@@ -208,6 +208,8 @@ class LovnishVerma:
 - Lightweight 1B parameter model optimized for CPU inference without GPU dependency
 - Custom Gradio interface with streaming responses and conversation history
 
+[![NIELIT AI Assistant](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=NIELIT-Assistant&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/NIELIT-Assistant)
+
 </td>
 </tr>
 </table>
@@ -242,6 +244,8 @@ class LovnishVerma:
 - Traffic density estimation with vehicle counting and flow analysis
 - Streamlit dashboard with live video feed processing and analytics visualization
 
+[![SmartLane AI](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=SMARTLANE-AI&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/SMARTLANE-AI)
+
 </td>
 </tr>
 </table>
@@ -261,6 +265,8 @@ class LovnishVerma:
 - SQLite backend with attendance logs, reports, and analytics export
 - Optimized for classroom-scale deployment with sub-second recognition latency
 
+[![Face & Emotion AI Attendance](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=facial-sentiment-analysed-ai-attendance-tracker&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/facial-sentiment-analysed-ai-attendance-tracker)
+
 </td>
 <td width="50%" valign="top">
 
@@ -273,6 +279,8 @@ class LovnishVerma:
 - Sub-second plot-based recommendation with vector similarity search
 - Interactive Gradio UI with filters for genre, rating, and publication year
 - Hugging Face Spaces deployment with zero infrastructure cost
+
+[![Book Recommendations](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=Book-Recommendations&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/Book-Recommendations)
 
 </td>
 </tr>
@@ -293,18 +301,23 @@ class LovnishVerma:
 - Risk scoring system with explainability using SHAP values
 - Production deployment on Hugging Face Spaces with REST API endpoint
 
+[![Diabetes Streamlit](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=diabetes-streamlit&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/diabetes-streamlit)
+
 </td>
 <td width="50%" valign="top">
 
-### 📊 [NIELIT Training Analytics Dashboard](https://nielitropar-dte.hf.space)
-**Live Analytics: FutureSkills PRIME × DTE Punjab**
+### 🎓 [FutureSkills PRIME Nomination Portal](https://futureskillsprime.onrender.com/)
 
-`Flask` `Plotly` `Folium` `Hugging Face` `Pandas`
+**Enterprise Nomination & Document Management Platform for NIELIT Chandigarh**
 
-- Real-time analytics dashboard tracking 79 faculty across 19+ polytechnic colleges
-- Interactive Punjab map with Folium markers showing institutional distribution
-- Dynamic charts for completion rates, performance metrics, and trend analysis
-- Automated data pipeline from training records to visual insights
+`Flask` `MongoDB` `Cloudinary` `ReportLab` `Python` `Google Apps Script`
+
+- Complete web-based nomination portal with dynamic course scheduling for FutureSkills PRIME programs, including Big Data, AI, AR/VR, and other emerging technology courses.
+- Automated generation of professional PDF and DOCX nomination forms with integrated digital signature capture and intelligent image aspect-ratio scaling.
+- Cloud-native architecture leveraging MongoDB for data persistence, Cloudinary for secure document storage, and Google Apps Script API for automated email notifications.
+- Advanced administrative dashboard featuring real-time application management, instant multi-record search, bulk ZIP downloads, status tracking, and comprehensive reporting.
+
+[![FutureSkills PRIME](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=futureskillsprime&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/futureskillsprime)
 
 </td>
 </tr>
@@ -375,6 +388,8 @@ class LovnishVerma:
 - AI-powered scoring using Gemini API with customizable evaluation criteria
 - Automated candidate shortlisting pipeline with email notifications
 - Multi-format support: PDF, DOCX parsing with text normalization
+
+[![Resume Data Extractor](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=ResumeDataExtractor&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/ResumeDataExtractor)
 
 </td>
 </tr>
