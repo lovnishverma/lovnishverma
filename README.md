@@ -339,6 +339,9 @@ class LovnishVerma:
 - The project was built to provide a modern online shopping experience with optimized performance, secure payment workflows, mobile responsiveness, and scalable architecture suitable for production deployments.
 - This repository is maintained as a professional portfolio demonstrating full-stack WordPress and WooCommerce development.
 
+[![JustBuying](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=justbuying&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/justbuying)
+
+
 </td>
 </tr>
 </table>
