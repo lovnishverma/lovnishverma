@@ -193,7 +193,7 @@ class LovnishVerma:
 - REST API backend with Flask; deployed on Hugging Face Spaces for public access
 - MongoDB for patient record management and diagnostic history tracking
 
-[![Brain Tumor](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=huggingface-Braintumor-Flask&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://lovnishverma-braintumor.hf.space)
+[![Brain Tumor](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=huggingface-Braintumor-Flask&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://lovnishverma-braintumor.hf.space)
 
 </td>
 <td width="50%" valign="top">
@@ -227,7 +227,7 @@ class LovnishVerma:
 - Web3.js integration for blockchain interactions; MetaMask wallet authentication
 - Dual-backend system: Flask for API, Django for admin dashboard and certificate management
 
-[![CertiChain](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=CertiChain&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/CertiChain)
+[![CertiChain](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=CertiChain&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/CertiChain)
 
 </td>
 <td width="50%" valign="top">
@@ -361,7 +361,7 @@ class LovnishVerma:
 - Hardware-optimized for resource-constrained Jetson Nano with 4GB RAM
 - GPU-accelerated inference achieving 30+ FPS on edge hardware
 
-[![Face Recog](https://github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=FaceRecognition-Attendance&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/FaceRecognition-Attendance)
+[![Face Recog](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=FaceRecognition-Attendance&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/FaceRecognition-Attendance)
 
 </td>
 <td width="50%" valign="top">
