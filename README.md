@@ -178,6 +178,43 @@ class LovnishVerma:
 
 <div align="center">
 
+
+<!-- Project Row -->
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🐍 [Python Getting Started](https://github.com/lovnishverma/Python-Getting-Started)
+**Comprehensive Python, Data Science & Deep Learning Learning Repository**
+
+`Python` `NumPy` `Pandas` `Scikit-learn` `TensorFlow` `Deep Learning`
+
+- Comprehensive collection of 50+ hands-on Jupyter & Google Colab notebooks covering Python, Data Science, Machine Learning, and Deep Learning from beginner to advanced level.
+- Production-oriented tutorials with real-world datasets, feature engineering, data visualization, model evaluation, and deployment-ready workflows.
+- Covers supervised learning, unsupervised learning, deep learning, computer vision, natural language processing, and end-to-end AI project development.
+- Designed as a practical learning resource for students, educators, researchers, and industry professionals with reusable code and exercises.
+
+[![Python Getting Started](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=Python-Getting-Started&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/Python-Getting-Started)
+
+</td>
+<td width="50%" valign="top">
+
+### 📚 [Slides, PPTs & PDFs](https://github.com/lovnishverma/Slidespptspdfs)
+**Professional AI, Data Science & Deep Learning Teaching Resources**
+
+`PowerPoint` `PDF` `Python` `AI/ML` `Deep Learning` `Data Science`
+
+- Extensive repository of professionally designed presentations, lecture notes, PDFs, and classroom materials covering AI, Machine Learning, Deep Learning, Data Science, IoT, Cloud Computing, and emerging technologies.
+- Educational content developed for university students, faculty development programmes, government officials, and industry-oriented technical training.
+- Includes structured slide decks, practical demonstrations, hands-on lab manuals, workshop content, and complete course material for classroom delivery.
+- Continuously updated knowledge repository supporting educators, trainers, researchers, and learners with industry-relevant technical resources.
+
+[![Slides PPTs PDFs](https://lovnish-github-readme-stats.vercel.app/api/pin/?username=lovnishverma&repo=Slidespptspdfs&theme=react&hide_border=true&bg_color=0A0A0A&title_color=00D9FF&text_color=C9D1D9&icon_color=FF6B35)](https://github.com/lovnishverma/Slidespptspdfs)
+
+</td>
+</tr>
+</table>
+
 <!-- Project Row 1 -->
 <table>
 <tr>
